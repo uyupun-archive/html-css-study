@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>CSS基本構造 · GitBook</title>
+        <title>2. HTMLの基礎知識 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="004_basic_knowledge.html" />
+    <link rel="next" href="003_css_basic_knowledge.html" />
     
     
-    <link rel="prev" href="002_html_basic_structure.html" />
+    <link rel="prev" href="001_what_is_html_css.html" />
     
 
     </head>
@@ -107,7 +107,7 @@
                 <a href="001_what_is_html_css.html">
             
                     
-                    HTML/CSSとは
+                    1. HTML/CSSとは
             
                 </a>
             
@@ -115,12 +115,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="002_html_basic_structure.html">
+        <li class="chapter active" data-level="1.3" data-path="002_html_basic_knowledge.html">
             
-                <a href="002_html_basic_structure.html">
+                <a href="002_html_basic_knowledge.html">
             
                     
-                    HTML基本構造
+                    2. HTMLの基礎知識
             
                 </a>
             
@@ -128,12 +128,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="003_css_basic_structure.html">
+        <li class="chapter " data-level="1.4" data-path="003_css_basic_knowledge.html">
             
-                <a href="003_css_basic_structure.html">
+                <a href="003_css_basic_knowledge.html">
             
                     
-                    CSS基本構造
+                    3. CSSの基礎知識
             
                 </a>
             
@@ -141,12 +141,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="004_basic_knowledge.html">
+        <li class="chapter " data-level="1.5" data-path="004_beginners_trap.html">
             
-                <a href="004_basic_knowledge.html">
+                <a href="004_beginners_trap.html">
             
                     
-                    基礎知識
+                    4. 初心者が陥りがちな罠
             
                 </a>
             
@@ -154,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="005_site_basic_structure.html">
+        <li class="chapter " data-level="1.6" data-path="005_website_framework.html">
             
-                <a href="005_site_basic_structure.html">
+                <a href="005_website_framework.html">
             
                     
-                    ホームページ基本構造
+                    5. Webサイトの雛形
             
                 </a>
             
@@ -167,12 +167,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="006_create_site.html">
+        <li class="chapter " data-level="1.7" data-path="006_make_website.html">
             
-                <a href="006_create_site.html">
+                <a href="006_make_website.html">
             
                     
-                    ホームページ作成
+                    6. Webサイトの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="007_to_close.html">
+            
+                <a href="007_to_close.html">
+            
+                    
+                    7. さいごに
             
                 </a>
             
@@ -210,7 +223,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >CSS基本構造</a>
+        <a href=".." >2. HTMLの基礎知識</a>
     </h1>
 </div>
 
@@ -225,7 +238,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css&#x57FA;&#x672C;&#x69CB;&#x9020;">CSS&#x57FA;&#x672C;&#x69CB;&#x9020;</h1>
+                                <h1 id="html&#x306E;&#x57FA;&#x790E;&#x77E5;&#x8B58;">HTML&#x306E;&#x57FA;&#x790E;&#x77E5;&#x8B58;</h1>
+<h3 id="&#x8A18;&#x8FF0;&#x4F8B;">&#x8A18;&#x8FF0;&#x4F8B;</h3>
+<h3 id="&#x30BF;&#x30B0;&#x3068;&#x8981;&#x7D20;">&#x30BF;&#x30B0;&#x3068;&#x8981;&#x7D20;</h3>
+<p>&#x30BF;&#x30B0;&#x306E;&#x7A2E;&#x985E;, &#x30BF;&#x30B0;&#x3068;&#x8981;&#x7D20;&#x306E;&#x9055;&#x3044;</p>
+<h3 id="&#x5C5E;&#x6027;&#x3068;&#x5024;">&#x5C5E;&#x6027;&#x3068;&#x5024;</h3>
+<p>&#x5C5E;&#x6027;&#x306E;&#x7A2E;&#x985E;</p>
+<p>// TODO:&#x7AE0;&#x5206;&#x3051;&#x308B;</p>
+<h3 id="&#x8A18;&#x8FF0;&#x4F8B;">&#x8A18;&#x8FF0;&#x4F8B;</h3>
+<p>&#x66F8;&#x304D;&#x65B9;, <code>&lt;!DOCTYPE html&gt;</code> &#x8AAC;&#x660E; <code>head(title, meta), body(div)</code> &#x306E;&#x8AAC;&#x660E; , &#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306E;&#x9055;&#x3044;5&#x3068;4  </p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -253,12 +280,12 @@
 
             
                 
-                <a href="002_html_basic_structure.html" class="navigation navigation-prev " aria-label="Previous page: HTML基本構造">
+                <a href="001_what_is_html_css.html" class="navigation navigation-prev " aria-label="Previous page: 1. HTML/CSSとは">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="004_basic_knowledge.html" class="navigation navigation-next " aria-label="Next page: 基礎知識">
+                <a href="003_css_basic_knowledge.html" class="navigation navigation-next " aria-label="Next page: 3. CSSの基礎知識">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -269,7 +296,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS基本構造","level":"1.4","depth":1,"next":{"title":"基礎知識","level":"1.5","depth":1,"path":"assets/004_basic_knowledge.md","ref":"./assets/004_basic_knowledge.md","articles":[]},"previous":{"title":"HTML基本構造","level":"1.3","depth":1,"path":"assets/002_html_basic_structure.md","ref":"./assets/002_html_basic_structure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/003_css_basic_structure.md","mtime":"2019-05-18T17:03:05.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-18T16:35:08.238Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2. HTMLの基礎知識","level":"1.3","depth":1,"next":{"title":"3. CSSの基礎知識","level":"1.4","depth":1,"path":"assets/003_css_basic_knowledge.md","ref":"./assets/003_css_basic_knowledge.md","articles":[]},"previous":{"title":"1. HTML/CSSとは","level":"1.2","depth":1,"path":"assets/001_what_is_html_css.md","ref":"./assets/001_what_is_html_css.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/002_html_basic_knowledge.md","mtime":"2019-05-18T17:50:15.965Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-18T16:35:08.238Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
