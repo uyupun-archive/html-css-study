@@ -2,7 +2,7 @@
 
 * [README](README.md)
 * [0. はじめに](./assets/00_opening.md)
-* [1. Webサービスとは](./assets/01_what_is_web_service.md)
+* [1. Webサービスとは](./assets/01_what_is_web.md)
 * [2. HTML/CSSとは](./assets/02_what_is_html_css.md)
 * [3. HTMLの基礎知識](./assets/03_html_basic_knowledge.md)
 * [4. CSSの基礎知識](./assets/04_css_basic_knowledge.md)
