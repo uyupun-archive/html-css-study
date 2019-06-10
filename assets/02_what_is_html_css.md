@@ -41,15 +41,23 @@ W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多�
 |HTML 3.2|1997年1月14日に策定.|
 |HTML 4.0|1997年12月18日に策定.|
 |HTML 4.01|1999年12月24日に策定.<br>これをベースにしてXHTML 1.0が策定される.|
+|XHTML 1.0|2000年1月26日に策定.<br>HTML 4.01をXHTMLとして再定義したもの.|
+|XHTML 1.1|2001年5月31日に策定.|
+|XHTML 2.0|2009年7月3日に策定の打ち切りを発表. 理由はHTML5にリソースを注ぐため.|
 |HTML 5|2014年10月28日に策定.<br>大幅にアップデートされ, 様々な要素や属性が追加される.|
 |HTML 5.1|2016年11月1日に策定.|
 |HTML 5.2|2017年12月14日に策定.|
 
-HTMLの先祖SGML, XML, XHTML, DTD宣言
+HTMLはSGMLというマークアップ言語を参考にして作られた.  
+XHTMLはHTMLにXMLの厳密さ・拡張性を取り入れたマークアップ言語.  
+HTML 5の誕生により滅びた.
 
-HTMLの仕様, CSSの仕様(レベルなど)
+<img src="../img/02_what_is_html_css/002.png" width="300">
 
-HTML(HyperText Markup Language), Webページの土台, タグ, 要素, 属性, Pug(廃れた), 歴史
+また, PugというHTMLをより簡潔な構文で記述できる言語も一時期流行ったが, 最近はあまり見ないようになった.
+Emmet
+
+CSSの仕様(レベルなど)
 
 # CSSとは
 CSS(Cascading Style Sheets), Webページのスタイル, HTMLで記載した物を装飾する, SASS, Bootstrap, 歴史
