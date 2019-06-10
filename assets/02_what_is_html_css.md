@@ -17,7 +17,14 @@ W3Cに不満を持った開発者たちによって2004年に結成された.
 W3Cの対抗組織として始まったWHATWGだが, HTML5はWHATWGが提唱したものをもとに仕様策定された.
 
 # HTMLの仕様策定の流れ
-W3Cで行われるWeb技術の仕様に関する審議や検討は「**W3C勧告プロセス**」と呼ばれ, **作業草案** -> **最終草案** -> **勧告候補** -> **勧告案** -> **W3C勧告** という５つの段階を踏む.  
+W3Cで勧告されるHTMLの仕様は「**W3C勧告プロセス**」と呼ばれる仕組みで審議・検討され, **作業草案** -> **最終草案** -> **勧告候補** -> **勧告案** -> **W3C勧告** という５つの段階を踏む.  
+
+これに対し, WHATWGでは**HTML Living Standard**というHTMLの仕様が存在し, これはバージョン番号や何年何月何日に策定されたかという概念がなく, 日々更新されている.  
+W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多少のズレはあり, これからそれぞれの仕様がどうなるのか懸念されていたが, つい先日2019年5月28日にW3Cは独自のHTMLの仕様策定を終了し, HTML Living Standardに一元化することを発表した.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🗞 W3C and the WHATWG signed an agreement to collaborate on a single version of HTML and DOM <a href="https://t.co/UQVjTmH0g7">https://t.co/UQVjTmH0g7</a></p>&mdash; W3C (@w3c) <a href="https://twitter.com/w3c/status/1133300432133079041?ref_src=twsrc%5Etfw">May 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ちなみに, HTML Living StandardのGitリポジトリは https://github.com/whatwg/html から参照できる.
 
 # なぜ標準化するのか
 業界の標準として仕様を策定することで, それに準拠した(つまり仕様に沿った機能を実装している)Webブラウザが作られる.  
