@@ -1,11 +1,14 @@
 # HTMLとは
-**HTML**とは, **Hyper Text Markup Language**の略で, 平たく言うとWebページの構造を記述するためのマークアップ言語である.  
+
+<img src="../img/02_what_is_html_css/001.png" width="200">
+
+**HTML**とは, **Hyper Text Markup Language**の略称で, 平たく言うとWebページの構造を記述するためのマークアップ言語である.  
 現在は**W3C**と**WHATWG**の２つの団体によって仕様の策定が行われている.
 
 Google Chromeの場合, 任意のWebページを開いて右クリックして出てきたメニューから「ページのソースを表示」を選択することで, そのWebページのHTMLやCSSを確認することができる.  
 他のブラウザでも大抵似たような方法で確認ができる.
 
-<img src="../img/02_what_is_html_css/001.png" width="700">
+<img src="../img/02_what_is_html_css/002.png" width="700">
 
 # HTMLのバージョンとなかま
 さて, 前項でHTMLの概要について触れたが, HTMLにはどんなバージョンや亜種が存在し, どういった順番で誕生してきたのかをここで一度確認しておく.
@@ -38,7 +41,7 @@ Google Chromeの場合, 任意のWebページを開いて右クリックして�
 前項ではHTMLの様々なバージョンや亜種が存在することについて触れたが, それらの仕様は一体誰が策定しているのだろうか.  
 そのことについて解説する.
 
-<img src="../img/02_what_is_html_css/002.png" width="400">
+<img src="../img/02_what_is_html_css/004.png" width="400">
 
 HTMLの仕様策定を行っている団体には**W3C**(**World Wide Web Consortium**)と**WHATWG**(**Web Hypertext Application Technology Working Group**)の２つの団体が存在する.
 
@@ -78,6 +81,25 @@ W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多�
 しかし実際はWebブラウザごとに実装状況が異なっていたり, 挙動が微妙に異なっていたりするため(特にIEは酷い), 標準化が上手くいっているとは言い難い.
 
 # CSSとは
-CSS(Cascading Style Sheets), Webページのスタイル, HTMLで記載した物を装飾する, SASS, Bootstrap, 歴史
 
-# CSSの仕様
+<img src="../img/02_what_is_html_css/005.png" width="200">
+
+CSSとは, Cascading Style Sheetsの略称で, 主にWebページのデザインやアニメーションを行うための言語である.  
+CSSもまたW3Cで仕様が標準化されている.
+
+# CSSのバージョン
+CSSの仕様はレベルという概念を持ち, Level 1〜Level 4まで公開されている.
+
+|バージョン|説明|
+|:--|:--|
+|CSS 1|1996年12月に勧告.|
+|CSS 2|1998年5月に勧告.|
+|CSS 2.1|2011年6月に勧告.|
+|CSS 3|-|
+|CSS 4|-|
+
+CSS 3以降ではCSS 2.1を中核とし, 機能の追加や改善をモジュール単位で実現している.  
+各Webブラウザは各モジュールに対応するか否かを自由に選択できるようになっている.  
+
+CSS 4ではCSS 3で未定義であった新機能, 一度草案に含まれたが勧告までには至らなかった機能からなる.  
+未だに勧告に至っていないCSS 3のモジュールがある中, CSS 4のモジュールの草案もいくつか公開されている.
