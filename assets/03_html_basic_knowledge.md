@@ -57,22 +57,29 @@ HTMLの基礎知識として, 知っておくべきことを紹介していき�
 
 
 ### 記述例
-以下は記述例だ.
+以下の記述例を元に, 基本的な記述方法について解説する.
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head></head>
-  <body></body>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>タイトル</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="hoge">hogehoge</div>
+  </body>
 </html>
 ```
 
 `<!DOCTYPE html>` を記述することで, 文書がHTML5で作成されたものであることを宣言している.  
 このことをDOCTYPE宣言といい, DTD(Document Type Definition)に従った記述をすることを宣言している.
 
-`html` タグはすべてのタグの親にあたり, HTMLを記述する際は, すべて `<html>` タグ内に記述する.
+`html` タグはすべてのタグの親にあたり(ルート要素という), HTMLを記述する際は, すべて `<html>` タグ内に記述する.  
+`lang="ja"` とすることでページの言語は日本語だということを表している.
 
 `head` タグ内には文書のヘッダ情報を記述する.  
+`meta` タグ `title` タグ `link` タグなどを使用し, 様々な情報を指定する.  
 
-
-書き方, `<!DOCTYPE html>` 説明 `head(title, meta), body(div)` の説明 , バージョンの違い5と4  
+`body` タグ内には文書を記述する.  
