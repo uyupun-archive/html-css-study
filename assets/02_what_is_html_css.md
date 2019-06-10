@@ -7,34 +7,12 @@ Google Chromeの場合, 任意のWebページを開いて右クリックして�
 
 <img src="../img/02_what_is_html_css/001.png" width="700">
 
-# W3CとWHATWG
-**W3C**(**World Wide Web Consortium**)はWeb技術の仕様の策定・標準化を行う非営利団体である.  
-**ティム・バーナーズ＝リー**によって1994年に設立された.  
-現在は**HTML**, **XHTML**, **XML**, **CSS**, **DOM**などの仕様を策定している.
-
-**WHATWG**(**Web Hypertext Application Technology Working Group**)はHTMLとその関連技術の仕様の策定・標準化を行うコミュニティである.  
-W3Cに不満を持った開発者たちによって2004年に結成された.  
-W3Cの対抗組織として始まったWHATWGだが, HTML5はWHATWGが提唱したものをもとに仕様策定された.
-
-# HTMLの仕様策定の流れ
-W3Cで勧告されるHTMLの仕様は「**W3C勧告プロセス**」と呼ばれる仕組みで審議・検討され, **作業草案** -> **最終草案** -> **勧告候補** -> **勧告案** -> **W3C勧告** という５つの段階を踏む.  
-
-これに対し, WHATWGでは**HTML Living Standard**というHTMLの仕様が存在し, これはバージョン番号や何年何月何日に策定されたかという概念がなく, 日々更新されている.  
-W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多少のズレはあり, これからそれぞれの仕様がどうなるのか懸念されていたが, つい先日2019年5月28日にW3Cは独自のHTMLの仕様策定を終了し, HTML Living Standardに一元化することを発表した.
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🗞 W3C and the WHATWG signed an agreement to collaborate on a single version of HTML and DOM <a href="https://t.co/UQVjTmH0g7">https://t.co/UQVjTmH0g7</a></p>&mdash; W3C (@w3c) <a href="https://twitter.com/w3c/status/1133300432133079041?ref_src=twsrc%5Etfw">May 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-ちなみに, HTML Living StandardのGitリポジトリは https://github.com/whatwg/html から参照できる.
-
-# なぜ標準化するのか
-業界の標準として仕様を策定することで, それに準拠した(つまり仕様に沿った機能を実装している)Webブラウザが作られる.  
-そうすることにより, 開発者はWebブラウザごとの互換性を考えることなくプログラムを作成できる.  
-
-# HTMLの歴史
+# HTMLのバージョンとなかま
+さて, 前項でHTMLの概要について触れたが, HTMLにはどんなバージョンや亜種が存在し, どういった順番で誕生してきたのかをここで一度確認しておく.
 
 |バージョン|説明|
 |:--|:--|
-|HTML 1.0|1993年6月に策定.<br>HTMLは**SGML**というマークアップ言語を参考に開発された.|
+|HTML 1.0|1993年6月に策定.<br>HTMLはSGMLというマークアップ言語を参考に開発された.|
 |HTML+|1993年11月に策定. HTML 1.0の上位互換.<br>テーブルなどが追加された.|
 |HTML 2.0|1995年11月に策定. HTML 2.0以降, HTMLの仕様策定はIETFではなくW3Cが行うこととなった.|
 |HTML 3.0|策定作業が行われたがドラフト段階で破棄.|
@@ -48,16 +26,58 @@ W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多�
 |HTML 5.1|2016年11月1日に策定.|
 |HTML 5.2|2017年12月14日に策定.|
 
-HTMLはSGMLというマークアップ言語を参考にして作られた.  
-XHTMLはHTMLにXMLの厳密さ・拡張性を取り入れたマークアップ言語.  
-HTML 5の誕生により滅びた.
+まず, HTMLは**SGML**というマークアップ言語を参考にして作られた.  
+そして, XHTMLはHTMLにXMLの厳密さ・拡張性を取り入れて作成された.  
+しかし, XHTMLはHTML 5の誕生により滅びた.  
+現在はHTML 5以降の記法を学んでおけば良い.
 
-<img src="../img/02_what_is_html_css/002.png" width="300">
+<img src="../img/02_what_is_html_css/003.png" width="300">
 
-また, PugというHTMLをより簡潔な構文で記述できる言語も一時期流行ったが, 最近はあまり見ないようになった.
-Emmet
 
-CSSの仕様(レベルなど)
+# W3CとWHATWG
+前項ではHTMLの様々なバージョンや亜種が存在することについて触れたが, それらの仕様は一体誰が策定しているのだろうか.  
+そのことについて解説する.
+
+<img src="../img/02_what_is_html_css/002.png" width="400">
+
+HTMLの仕様策定を行っている団体には**W3C**(**World Wide Web Consortium**)と**WHATWG**(**Web Hypertext Application Technology Working Group**)の２つの団体が存在する.
+
+W3CはWeb技術の仕様の策定・標準化を行う非営利団体である.  
+**ティム・バーナーズ＝リー**によって1994年に設立された.  
+現在は**HTML**, **XHTML**, **XML**, **CSS**, **DOM**などの仕様を策定している.
+
+WHATWGはHTMLとその関連技術の仕様の策定・標準化を行うコミュニティである.  
+W3Cに不満を持った開発者たちによって2004年に結成された.  
+W3Cの対抗組織として始まったWHATWGだが, HTML5はWHATWGが提唱したものをもとに仕様策定された.
+
+# HTMLをめぐる２つの仕様
+前項でW3CとWHATWGという２つの団体がHTMLの仕様策定を行っていることを説明した.  
+この項ではそれぞれが策定している仕様についてもう少し細かく解説していく.
+
+W3Cで勧告されるHTMLの仕様は「**W3C勧告プロセス**」と呼ばれる仕組みで審議・検討され, **作業草案** -> **最終草案** -> **勧告候補** -> **勧告案** -> **W3C勧告** という５つの段階を踏む.  
+
+これに対し, WHATWGでは**HTML Living Standard**というHTMLの仕様が存在し, これはバージョン番号や何年何月何日に策定されたかという概念がなく, 日々更新され続けている.
+
+そしてこれらの仕様書をブラウザベンダが参照し, 各々のWebブラウザに機能を実装していき, これで開発者ははじめてその機能を使えるようになるのである.
+
+W3Cが勧告するHTML 5以降の仕様と差分は少なかったものの多少のズレはあり, これからそれぞれの仕様のズレがどう影響してくるのか懸念されていたが, つい先日2019年5月28日にW3Cは独自のHTMLの仕様策定を終了し, HTML Living Standardに一元化することを発表した.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🗞 W3C and the WHATWG signed an agreement to collaborate on a single version of HTML and DOM <a href="https://t.co/UQVjTmH0g7">https://t.co/UQVjTmH0g7</a></p>&mdash; W3C (@w3c) <a href="https://twitter.com/w3c/status/1133300432133079041?ref_src=twsrc%5Etfw">May 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ちなみに, HTML Living StandardのGitリポジトリは https://github.com/whatwg/html から参照できる.
+
+# なぜ標準化するのか
+ここまで読んできて「なぜ標準化するのか？」と疑問を持った人も少なくはないと思う.  
+そこで少し, 標準化する理由について説明する.
+
+標準規格というのはIT業界のみならず, 様々な分野で多岐にわたる標準規格が存在する.  
+例えばISOやJISはよく耳にするだろう.  
+ではなぜ標準化するのだろうか.  
+それは, 業界の標準規格として仕様を策定することで, それに準拠した(つまり仕様に沿った機能を実装している)Webブラウザが開発される.  
+そうすることにより, 開発者はWebブラウザごとの互換性を考えることなくプログラムを作成できる.  
+しかし実際はWebブラウザごとに実装状況が異なっていたり, 挙動が微妙に異なっていたりするため(特にIEは酷い), 標準化が上手くいっているとは言い難い.
 
 # CSSとは
 CSS(Cascading Style Sheets), Webページのスタイル, HTMLで記載した物を装飾する, SASS, Bootstrap, 歴史
+
+# CSSの仕様
