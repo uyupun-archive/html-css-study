@@ -21,7 +21,17 @@ HTMLの全ての要素は**ボックス**として表現され, ボックスは�
 
 <img src="../img/05_beginners_trap/001.png" width="600">
 
-// TODO: ボックスモデルのサンプルを追加
+上記画像をcssで記述した際のコードは以下のようになる.
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 20px solid orange;
+  margin: 20px;
+}
+```
 
 # displayプロパティ
 
