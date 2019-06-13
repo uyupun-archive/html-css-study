@@ -3,24 +3,29 @@
 完成品は https://after-school-study-group.github.io/html-css-study/src/index.html を参照.
 
 # 素材の入手
-作成に先立って, 今回作成するWebサイトに必要な素材をダウンロードする.  
-https://github.com/after-school-study-group/html-css-study-parts からDownload Zipを押し ... みたいな説明
-// TODO
+作成に先立って, 今回作成するWebサイトに必要な素材(画像, テキスト)をダウンロードする.  
+https://github.com/after-school-study-group/html-css-study-parts にアクセスし, Download Zipを押すとZipファイルがダウンロードされるため, 各自のPCで展開しておく.
 
-# 作成
-ファイル構成は以下の通りである.
+<img src="../img/07_make_website/001.png" width="300">
+
+# ファイルとディレクトリの作成
+まずは必要なファイルとディレクトリを作成する.
+構成は以下の通りである.
 
 ```
-index.html
-favicon.ico
-css
-  - style
-images
-  - ass.png
-  - takashi1.jpg
-  - takashi2.jpg
-  - takashi3.jpg
+my-site
+  index.html
+  favicon.ico
+  css
+    style.css
+  images
+    ass.png
+    takashi1.jpg
+    takashi2.jpg
+    takashi3.jpg
 ```
+
+なお, `favicon.ico`と`images`ディレクトリ以下の画像は前項でダウンロードした素材の中に入っている.
 
 まず初めにPC版を作成し, その後レスポンシブ対応のためのコードを追加していく.
 
@@ -171,4 +176,3 @@ header .col:last-of-type {
 ## footerの作成
 
 ## レスポンシブ対応
-
