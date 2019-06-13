@@ -143,8 +143,8 @@ CSS設計にも様々な種類があり, 導入の際にはそのプロジェク
 
 |設計パターン|説明|
 |:--|:--|
-|OOCSS||
-|SMACSS||
-|BEM||
-|MCSS||
-|FLOCSS||
+|OOCSS|オブジェクト指向プログラミングの概念を取り入れたCSS設計(Object Oriented CSS).|
+|SMACSS|OOCSSのコンセプトを元にして考えられたCSS設計.<br>Base, Layout, Module, State, Themeの5つのカテゴリに分けることで, 定義したレイアウトを管理しやすくなる.|
+|BEM|CSS設計で最も難しいともいえる命名規則において, その問題を解決するために考えられたCSS設計.|
+|MCSS|OOCSSとBEMのコンセプトを元にして考えられたCSS設計.<br>Foundation, Base, Project, Cosmeticの4つのレイヤーで構成される.|
+|FLOCSS|上記4つのCSS設計を元にして考えられたCSS設計.<br>Foundation, Layout, Objectの3つのレイヤーと, Objectレイヤーの子レイヤーである, Component, Project, Utilityで構成される.|
