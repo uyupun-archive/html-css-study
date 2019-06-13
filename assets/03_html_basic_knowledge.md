@@ -25,7 +25,8 @@ HTMLでリンクを生成する場合は以下のように記述する.
 <a href="example.com">移動する</a>
 ```
 
-<img src="../img/03_html_basic_knowledge/002.png" width="70">
+> 実行結果:  
+> <img src="../img/03_html_basic_knowledge/002.png" width="70">
 
 要素型によっては終了タグが無いものも存在する.
 
@@ -130,7 +131,8 @@ DOCTYPE宣言.
 5行目:  
 `title`タグはWebブラウザのタブに表示される文字列を指定するためのものである.
 
-<img src="../img/03_html_basic_knowledge/003.png" width="200">
+> 実行結果:  
+> <img src="../img/03_html_basic_knowledge/003.png" width="200">
 
 7行目:
 `body`タグ内にはコンテンツを記述する.  
