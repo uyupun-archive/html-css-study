@@ -27,17 +27,17 @@ my-site
 
 なお, `favicon.ico`と`images`ディレクトリ以下の画像は前項でダウンロードした素材の中に入っている.
 
-まず初めにPC版を作成し, その後レスポンシブ対応のためのコードを追加していく.
+まず初めにPC版を作成し, その後レスポンシブ対応のためのコードを追加していく.  
+レスポンシブ対応については, 次章で詳しく紹介している.
 
-## headの作成
-最初にHTML内の `head` 要素を記述していく.
+## ヘッダ情報の記述
+まず初めに, ヘッダ情報を記述する.
 
 ```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <title>ほうかご勉強会</title>
@@ -46,10 +46,18 @@ my-site
 </html>
 ```
 
-## デフォルト値の変更
-各タグにはデフォルト値が入っている.  
-そのデフォルト値のまま使用したくない場合もある.  
-そのため, デフォルト値を変更する.
+5行目:  
+カレントディレクトリ内のcssフォルダ内の`style.css`というCSSファイルを読み込んでいる.
+
+6行目:
+カレントディレクトリ内の`favicon.ico`というファビコンを読み込んでいる.
+
+## リセットCSSの作成
+次にリセットCSSを作成する.  
+リセットCSSとは, ブラウザによって異なるデフォルト値のCSSを打ち消し, ブラウザ間の表示を揃えるためのCSSファイルのことである.  
+有名なリセットCSSには[Eric Meyer’s “Reset CSS” 2.0](https://cssreset.com/scripts/eric-meyer-reset-css/)や[Normalize.css](https://necolas.github.io/normalize.css/)がある.  
+今回は簡易的なリセットCSSを作成する.  
+また, 共通のスタイルを使用する要素型セレクタに関しても記述する.
 
 ```css
 body {
@@ -61,22 +69,41 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-section {
-  padding: 100px 0;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
 }
+
+article {
+  padding: 100px 0;
+  background: #fff;
+}
+
+article:nth-of-type(2n) {
+  background: #f8f8f8;
+}
 ```
 
+3行目:  
+font-familyプロパティは, フォントのデザインを設定している.  
+`Verdana`はMicrosoftが開発したサンセリフ体のフォントである.  
+`sans-serif`は総称ファミリーと言い, 指定したフォントが使用できない閲覧者に, 最低限のフォントファミリーを提供するためのものである.  
+今回は`sans-serif`を設定したので, ゴシック系のフォントを表示する.
+
+7行目:  
+box-sizingプロパティは, paddingとborderの幅と高さをwidthに含めるかどうかを設定する.  
+`border-box`を指定することで, paddingとborderの幅と高さをwidthに含める設定にしている.
+
+11行目:  
+list-style-typeプロパティは, リストの項目の先頭に表示するマーカー文字の種類を示す.  
+`none`を指定することで, マーカー文字を表示しないように設定している.
+
+20行目:  
+`article:nth-of-type(2n)`は, articleプロパティの偶数番目のものにスタイルを適用する.
+
 ## 共通クラスの作成
-`container` クラスを作成する.
+今回はCSS設計のOOCSSを元にクラスを作成する.  
+CSS設計については次章で詳しく説明している.
 
 ```css
 .container {
@@ -85,87 +112,66 @@ ul {
   max-width: 768px;
   margin: 0 auto;
 }
-```
 
-`max-width` を指定することで `width` が768pxより大きくならない.  
-768pxというのはタブレット端末を使用した場合でもPCと同じように表示するためである.  
-また, `box-sizing: border-box;` , `padding: 0 20px;` を指定しているため, `width` の周りに `padding` が付くのではなく, 内側に付くため, `widht` は728pxになる.  
-`margin: 0 auto;` を指定することで, 中央に寄せている.
-
-`grid` クラスを作成する.
-
-```css
 .grid {
   display: grid;
   grid-template-columns: 50% 50%;
-}
-```
-
-## headerの作成
-`header` を作成する.
-
-```html
-<header>
-  <div class="container">
-    <div class="grid">
-      <div class="col">
-        <p>放課後に勉強して、圧倒的成長。</p>
-        <h1 class="title">ほうかご勉強会</h1>
-        <a href="#" class="admission">入会はこちらから <i class="fas fa-external-link-alt"></i></a>
-      </div>
-      <div class="col">
-        <img src="images/ass.png" alt="ASS" class="header-img">
-      </div>
-    </div>
-  </div>
-</header>
-```
-
-```css
-header {
-  background: linear-gradient(to right, #af384d, #b81a3e);
-  padding: 100px 0;
-}
-
-header p {
-  color: #fff;
 }
 
 .title {
   font-size: 34px;
   margin-bottom: 50px;
   font-weight: normal;
-  color: #fff;
 }
 
-.admission {
-  display: inline-block;
-  padding: 10px 40px;
-  background: #fff;
+.sub-title {
   text-align: center;
-  color: #b81a3e;
-  border-radius: 5px;
-  opacity: 1;
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
-.admission:hover {
-  opacity: 0.7;
-}
-
-.header-img {
+.image {
   width: 250px;
   height: 250px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-}
-
-header .col:last-of-type {
-  padding: 10px;
-  text-align: right;
-  box-sizing: border-box;
 }
 ```
 
-## mainの作成
+// TODO: コードの説明 以下も参考程度に
+`max-width` を指定することで `width` が768pxより大きくならない.  
+768pxというのはタブレット端末を使用した場合でもPCと同じように表示するためである.  
+また, `box-sizing: border-box;` , `padding: 0 20px;` を指定しているため, `width` の周りに `padding` が付くのではなく, 内側に付くため, `widht` は728pxになる.  
+`margin: 0 auto;` を指定することで, 中央に寄せている.
+
+
+## コンテンツの作成
+次に完成品を元に, コンテンツを作成する.
+
+### ヘッダーの作成
+まずはヘッダーから作成する.  
+以下の画像のように, 要素ごとのまとまりを作成すると, HTML文が記述しやすくなる.
+
+<img src="../img/07_make_website/002.png" width="600">
+
+```html
+<header>
+  <div class="container">
+    <div class="grid">
+      <div class="col header-col">
+        <p class="text-white">放課後に勉強して、圧倒的成長。</p>
+        <h1 class="title text-white">ほうかご勉強会</h1>
+        <a href="#" class="link">入会はこちらから</a>
+      </div>
+      <div class="col header-col">
+        <img src="images/ass.png" alt="ASS" class="image shadow">
+      </div>
+    </div>
+  </div>
+</header>
+```
+
+### メインの作成
 
 ### section1の作成
 
@@ -173,6 +179,6 @@ header .col:last-of-type {
 
 ### section3の作成
 
-## footerの作成
+### footerの作成
 
 ## レスポンシブ対応
