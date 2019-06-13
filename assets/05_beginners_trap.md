@@ -23,35 +23,30 @@ HTMLの全ての要素は**ボックス**として表現され, ボックスは�
 
 # displayプロパティ
 
-// TODO: まずdisplayプロパティが何なのかを説明
-
-displayプロパティの値には`block`, `inline`, `inline-block`, `table`, `flex`, `grid`などがある.  
-
-// TODO: それぞれの値の特徴を表にまとめる
+displayプロパティは要素の表示形式を指定するために使用する.  
+表示形式には`block`, `inline`, `inline-block`, `flex`, `grid`などがある.
 
 |プロパティ名|説明|
 |:--|:--|
-|block||
-|inline||
-|inline-block||
-|table||
-|flex||
-|grid||
+|block|見出し, 段落, リスト, フォーム等のひとつのまとまった単位として表す. 親要素の幅全体に広がって配置され, 親要素が`inline`, `inline-block`の場合, 子要素の値を`block`にすることはできない.|
+|inline|主に文章の一部分として利用する. 文字列の幅やフォントサイズが`width`と`height`の大きさになる. `width`, `height`, `margin-top`, `margin-bottom`は指定できない.|
+|inline-block|`inline`とほとんど同じ用途で使用されるが, `inline-block`の場合, `width`, `height`, `margin-top`, `margin-bottom`も指定できる.|
+|flex|CSS3から追加された表示形式. 親要素に`flex`を指定すると, 子要素が`block`であろうが, 子要素は改行されずに横並びで表示される.|
+|grid|子要素をグリッドレイアウト(要素を格子状に並べるレイアウト)によって列と行に整列する. `grid`要素内で列と行の数を定義する.|
 
-// TODO: ↓の内容をいい感じに表に移動できそう
+よく使用されるタグの表示形式は以下のようになる.
 
-その中でも, `block` , `inline` , `inline-block` は正しく理解していない人が多い.  
-ここではそれぞれの特徴について説明する.
+|プロパティ名|タグ|
+|:--|:--|
+|block|`<div>`, `<p>`, `<h1> ~ <h6>`, `<ul>`, `<ol>`, `<form>`|
+|inline|`<span>`, `<a>`, `<label>`, `<strong>`, `<br>`|
+|inline-block|`<button>`, `<textarea>`, `<input>`, `<select>`, `<img>`|
 
-`block`は親要素の幅全体に広がって配置される.  
-`width`, `height`, `padding`, `border`, `margin`の全てを使用できる.
-
-`inline`は文字列の幅やフォントサイズが`width`と`height`の大きさになる.  
-`width`, `height`, `margin-top`, `margin-bottom`は使用できない.
-
-`inline-block`は`inline`と違い, `width`, `height`, `padding`, `border`, `margin`全てを使用できる.
-
-// TODO: 簡単なサンプルを入れる
+```css
+span {
+  display: inline-block;
+}
+```
 
 # positionプロパティ
 
