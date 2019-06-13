@@ -6,13 +6,22 @@
 Webページは他のWebページに移動できる機能(**ハイパーリンク**)やマルチメディア(写真, 音声, 動画など)を埋め込める機能が特徴だが, それらはHTMLによって実現されている.  
 拡張子は`.html`.  
 
-# HTMLの確認
+# HTML/CSSの確認
 Google Chromeの場合, 任意のWebページを開いて右クリックして出てきたメニューから「ページのソースを表示」を選択することで, そのWebページのHTMLやCSSを確認することができる.  
 他のブラウザでも大抵似たような方法で確認ができる.
 
 <img src="../img/02_what_is_html_css/002.png" width="700">
 
-// TODO: デベロッパーツールの説明
+また, もう少し高度なHTML/CSSの確認方法として, **デベロッパーツール**を使用する方法がある.  
+デベロッパーツールは, 「設定 > その他のツール > デベロッパーツール」から起動できる.
+
+<img src="../img/02_what_is_html_css/003.png" width="500">
+
+デベロッパーツールでは, HTML/CSSの操作を行ったりできる他, ネットワークの通信状況やCookieの値を確認できるなど様々な機能があり, Web開発者必須のツールとなっている.  
+
+<img src="../img/02_what_is_html_css/004.png" width="600">
+
+デベロッパーツールはGoogle Chromeでの機能だが, 他のWebブラウザでも大抵似たような機能がサポートされている.
 
 # HTMLのバージョンとなかま
 この項ではHTMLにどんなバージョンや亜種が存在し, どういった順序で誕生してきたのかを確認していく.
@@ -43,12 +52,12 @@ Google Chromeの場合, 任意のWebページを開いて右クリックして�
 しかし, XHTMLはHTML 5の誕生によりすでに滅びた技術なので, 現在はHTML 5以降の記法を学んでおけば問題ない.  
 この講座でも基本的にHTML 5以降を前提に話を進めていく.
 
-<img src="../img/02_what_is_html_css/003.png" width="300">
+<img src="../img/02_what_is_html_css/005.png" width="300">
 
 # W3CとWHATWG
 前項ではHTMLの様々なバージョンや亜種が存在することについて触れたが, それらの仕様は一体誰が策定しているのだろうか.  
 
-<img src="../img/02_what_is_html_css/004.png" width="400">
+<img src="../img/02_what_is_html_css/006.png" width="400">
 
 HTMLの仕様策定を行っている団体には[**W3C**(**World Wide Web Consortium**)](https://www.w3.org/)と[**WHATWG**(**Web Hypertext Application Technology Working Group**)](https://whatwg.org/)の２つの団体が存在する.
 
@@ -89,7 +98,7 @@ W3Cが勧告するHTML 5以降の仕様と差分は少ないものの多少の�
 
 # CSSとは
 
-<img src="../img/02_what_is_html_css/005.png" width="200">
+<img src="../img/02_what_is_html_css/007.png" width="200">
 
 **CSS**とは, **Cascading Style Sheets**の略称で, 主にWebページのデザインやアニメーションを行うための言語である.  
 拡張子は `.css`.  
