@@ -16,37 +16,33 @@ CSSには**詳細度**(**Specificity**)と呼ばれる概念があり, 簡単に
 詳しい詳細度については, https://specifishity.com/ に分かりやすくまとめられている.
 
 # ボックスモデル
-HTMLの全ての要素は**ボックス**として表現され, ボックスは２種類の余白(`margin`, `padding`), 境界線(`border`), 幅(`width`), 高さ(`height`), そしてその中に入っている要素で構成される.  
+HTMLの全ての要素は**ボックスモデル**に従って表現され, **ボックス**は２種類の余白(`margin`, `padding`), 境界線(`border`), 幅(`width`), 高さ(`height`), そしてその中に入っている要素で構成される.  
 ボックスモデルを意識してCSSを書くことで, レイアウト崩れで悩むことは格段に減るだろう.
 
 <img src="../img/05_beginners_trap/001.png" width="600">
 
-# displayプロパティ
+# ボックスの種類
+前項で解説したボックスにはいくつか種類があり, 主なものには`block`, `inline`, `inline-block`, `flex`, `grid`がある.  
+また, それぞれの要素は要素によって様々な初期値が設定されている.  
 
-displayプロパティは要素の表示形式を指定するために使用する.  
-表示形式には`block`, `inline`, `inline-block`, `flex`, `grid`などがある.
-
-|プロパティ名|説明|
-|:--|:--|
-|block|見出し, 段落, リスト, フォーム等のひとつのまとまった単位として表す. 親要素の幅全体に広がって配置され, 親要素が`inline`, `inline-block`の場合, 子要素の値を`block`にすることはできない.|
-|inline|主に文章の一部分として利用する. 文字列の幅やフォントサイズが`width`と`height`の大きさになる. `width`, `height`, `margin-top`, `margin-bottom`は指定できない.|
-|inline-block|`inline`とほとんど同じ用途で使用されるが, `inline-block`の場合, `width`, `height`, `margin-top`, `margin-bottom`も指定できる.|
-|flex|CSS3から追加された表示形式. 親要素に`flex`を指定すると, 子要素が`block`であろうが, 子要素は改行されずに横並びで表示される.|
-|grid|子要素をグリッドレイアウト(要素を格子状に並べるレイアウト)によって列と行に整列する. `grid`要素内で列と行の数を定義する.|
-
-よく使用されるタグの表示形式は以下のようになる.
-
-|プロパティ名|タグ|
-|:--|:--|
-|block|`<div>`, `<p>`, `<h1> ~ <h6>`, `<ul>`, `<ol>`, `<form>`|
-|inline|`<span>`, `<a>`, `<label>`, `<strong>`, `<br>`|
-|inline-block|`<button>`, `<textarea>`, `<input>`, `<select>`, `<img>`|
+**displayプロパティ**はボックスの種類をCSSから操作するためのプロパティである.  
+例えば, span要素は初期値として`block`が設定されているが, displayプロパティで`inline-block`に変更している.
 
 ```css
 span {
   display: inline-block;
 }
 ```
+
+次に, それぞれのボックスの特徴を以下に示す.
+
+|ボックスの種類|説明|
+|:--|:--|
+|`block`|見出し, 段落, リスト, フォーム等のひとつのまとまった単位として表す.<br>親要素の幅全体に広がって配置される.<br>親要素が`inline`, `inline-block`の場合, 子要素の値を`block`にすることはできない.|
+|`inline`|主に文章の一部分として利用する. 文字列の幅やフォントサイズが`width`と`height`の大きさになる. `width`, `height`, `margin-top`, `margin-bottom`は指定できない.|
+|`inline-block`|`inline`とほとんど同じ用途で使用されるが, `inline-block`の場合, `width`, `height`, `margin-top`, `margin-bottom`も指定できる.|
+|`flex`|CSS3から追加された表示形式. 親要素に`flex`を指定すると, 子要素が`block`であろうが, 子要素は改行されずに横並びで表示される.|
+|`grid`|子要素をグリッドレイアウト(要素を格子状に並べるレイアウト)によって列と行に整列する. `grid`要素内で列と行の数を定義する.|
 
 # positionプロパティ
 
