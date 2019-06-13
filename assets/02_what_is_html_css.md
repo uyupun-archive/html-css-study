@@ -3,7 +3,7 @@
 <img src="../img/02_what_is_html_css/001.png" width="200">
 
 **HTML**とは, **Hyper Text Markup Language**の略称で, 平たく言うとWebページの構造を記述するためのマークアップ言語である.  
-拡張子は `.html`.  
+拡張子は`.html`.  
 現在はW3CとWHATWGの２つの団体によって仕様の策定が行われている.
 
 Google Chromeの場合, 任意のWebページを開いて右クリックして出てきたメニューから「ページのソースを表示」を選択することで, そのWebページのHTMLやCSSを確認することができる.  

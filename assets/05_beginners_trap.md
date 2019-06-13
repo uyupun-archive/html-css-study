@@ -27,20 +27,31 @@ HTMLの全ての要素は**ボックス**として表現され, ボックスは�
 
 // TODO: まずdisplayプロパティが何なのかを説明
 
-displayプロパティの値には `block` , `inline` , `inline-block` , `flex` , `table` などがある.  
+displayプロパティの値には`block`, `inline`, `inline-block`, `table`, `flex`, `grid`などがある.  
 
 // TODO: それぞれの値の特徴を表にまとめる
+
+|プロパティ名|説明|
+|:--|:--|
+|block||
+|inline||
+|inline-block||
+|table||
+|flex||
+|grid||
+
+// TODO: ↓の内容をいい感じに表に移動できそう
 
 その中でも, `block` , `inline` , `inline-block` は正しく理解していない人が多い.  
 ここではそれぞれの特徴について説明する.
 
-`block` は親要素の幅全体に広がって配置される.  
-`width` , `height` , `padding` , `border`, `margin` 全てを使用できる.
+`block`は親要素の幅全体に広がって配置される.  
+`width`, `height`, `padding`, `border`, `margin`の全てを使用できる.
 
-`inline` は文字列の幅やフォントサイズが `width` と `height` の大きさになる.  
-`width` , `height` , `margin-top` , `margin-bottom` は使用できない.
+`inline`は文字列の幅やフォントサイズが`width`と`height`の大きさになる.  
+`width`, `height`, `margin-top`, `margin-bottom`は使用できない.
 
-`inline-block` は `inline` と違い, `width` , `height` , `padding` , `border`, `margin` 全てを使用できる.
+`inline-block`は`inline`と違い, `width`, `height`, `padding`, `border`, `margin`全てを使用できる.
 
 // TODO: 簡単なサンプルを入れる
 
@@ -48,7 +59,7 @@ displayプロパティの値には `block` , `inline` , `inline-block` , `flex` 
 
 // TODO: まずpositionプロパティが何なのかを説明
 
-positionプロパティの値には `static` , `relative` , `absolute` , `fixed` の４種類が存在する.  
+positionプロパティの値には`static`, `relative`, `absolute`, `fixed`の４種類が存在する.  
 
 // TODO: それぞれの値の特徴を表にまとめる
 
