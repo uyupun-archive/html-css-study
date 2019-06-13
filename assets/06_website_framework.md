@@ -45,4 +45,58 @@ WrapperはWebサイト全体に影響を及ぼすクラスとして使用し, Co
 
 <img src="../img/06_website_framework/002.png" width="400">
 
-// TODO: サンプル
+以下はWrapperとContainerを使用した例である.  
+分かりやすいように背景色を付けて表示する.
+
+```html
+<body>
+  <div class="wrapper">
+    <header>
+      ヘッダー
+    </header>
+    <div class="container">
+      <nav>
+        ナビゲーション
+      </nav>
+      <main>
+        メイン
+      </main>
+    </div>
+    <footer>
+      フッター
+    </footer>
+  </div>
+</body>
+```
+
+```css
+body {
+  background: lightgray;
+}
+
+.wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  background: red;
+}
+
+header footer {
+  background: orange;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  width: 30%;
+  background: blue;
+}
+
+main {
+  width: 70%;
+  background: green;
+}
+```
+> 実行結果:  
+> <img src="../img/06_website_framework/005.png" width="400">
