@@ -22,7 +22,7 @@ HTMLの全ての要素は**ボックスモデル**に従って表現され, **�
 <img src="../img/05_beginners_trap/001.png" width="600">
 
 # ボックスの種類
-前項で解説したボックスにはいくつか種類があり, 主なものには`block`, `inline`, `inline-block`, `flex`, `grid`がある.  
+前項で解説したボックスにはいくつか種類があり, 主なものには`block`, `inline`, `inline-block`, `flex`, `grid`, `none`がある.  
 また, それぞれの要素は要素によって様々な初期値が設定されている.  
 
 **displayプロパティ**はボックスの種類をCSSから操作するためのプロパティである.  
@@ -38,45 +38,54 @@ span {
 
 |ボックスの種類|説明|
 |:--|:--|
-|`block`|見出し, 段落, リスト, フォーム等のひとつのまとまった単位として表す.<br>親要素の幅全体に広がって配置される.<br>親要素が`inline`, `inline-block`の場合, 子要素の値を`block`にすることはできない.|
-|`inline`|主に文章の一部分として利用する. 文字列の幅やフォントサイズが`width`と`height`の大きさになる. `width`, `height`, `margin-top`, `margin-bottom`は指定できない.|
-|`inline-block`|`inline`とほとんど同じ用途で使用されるが, `inline-block`の場合, `width`, `height`, `margin-top`, `margin-bottom`も指定できる.|
-|`flex`|CSS3から追加された表示形式. 親要素に`flex`を指定すると, 子要素が`block`であろうが, 子要素は改行されずに横並びで表示される.|
-|`grid`|子要素をグリッドレイアウト(要素を格子状に並べるレイアウト)によって列と行に整列する. `grid`要素内で列と行の数を定義する.|
+|`block`|・要素が縦に並ぶ(改行が入る)<br>・widthとheightを設定できる<br>・上下左右のmarginとpaddingを設定できる<br><img src="../img/05_beginners_trap/002.png" width="300">|
+|`inline`|・要素が横に並ぶ<br>・widthとheightを設定できない(文字のサイズによって左右される)<br>・左右のmarginとpaddingを設定できる<br><img src="../img/05_beginners_trap/003.png" width="300">|
+|`inline-block`|・要素が横に並ぶ<br>・widthとheightを設定できる<br>・上下左右のmarginとpaddingを設定できる<br><img src="../img/05_beginners_trap/004.png" width="300">|
+|`flex`|親要素に`flex`を指定すると, 子要素が`block`であろうがなかろうが改行されずに横並びで表示される.<br><img src="../img/05_beginners_trap/005.png" width="300">|
+|`grid`|親要素に`grid`を指定すると, 要素をグリッド状に分割し, 子要素の幅と高さがグリッド何個分なのかを指定できる.<br><img src="../img/05_beginners_trap/006.png" width="300">|
+|`none`|要素を非表示にする.|
 
 # positionプロパティ
-positionプロパティはボックスの配置方法（基準位置）を指定するために使用する.  
-指定するのは配置方法（基準位置）のみのため, 実際の表示位置の指定には, top, bottom, left, rightプロパティを併用して, 基準位置からの距離を設定する必要がある.  
-positionプロパティの値には, `static`, `relative`, `absolute`, `fixed`の4種類がある.
+**positionプロパティ**はボックスの配置方法(何を基準位置として配置するか)を指定するためのプロパティである.  
+指定するのは配置方法のみのため, 実際の表示位置の指定には, top, bottom, left, rightといったプロパティを併用し, 基準位置からの距離を設定する必要がある.  
+positionプロパティの値には, `static`, `relative`, `absolute`, `fixed`の４種類がある.
 
 |値|説明|
 |:--|:--|
-|`static`|初期値.<br>top, bottom, left, rightプロパティは適用されない.|
-|`relative`|相対位置への配置.<br>基準位置は, `static`を指定した場合に表示される位置と同じ.|
-|`absolute`|絶対位置への配置.<br>基準位置は, 親要素が`static`を指定している場合, ブラウザの左上に位置する.<br>親要素が`static`以外を指定している場合, 親要素の左上に位置する.|
-|`fixed`|絶対位置への配置.<br>`absolute`と同じ基準位置だが, スクロールしても位置が固定されたままとなる.|
+|`static`|・全ての要素はこの初期値を持つ.<br>・top, bottom, left, rightプロパティを適用できない.<br><img src="../img/05_beginners_trap/007.png" width="200">|
+|`relative`|・相対位置への配置.<br>・基準位置は`static`を指定した場合に表示される位置と同様.<br><img src="../img/05_beginners_trap/008.png" width="200">|
+|`absolute`|・絶対位置への配置.<br>・基準位置は親要素が`static`を指定している場合, ブラウザの左上に位置する.<br>・親要素が`static`以外を指定している場合, 親要素の左上に位置する.<br><img src="../img/05_beginners_trap/009.png" width="400">|
+|`fixed`|絶対位置への配置.<br>`absolute`と同じ基準位置だが, スクロールしても位置が固定されたままとなる.<br><img src="../img/05_beginners_trap/010.png" width="200">|
 
-下記のコードはpositionプロパティの使用例である.
+positionプロパティのサンプルコードを以下に示す.
 
 ```html
 <div class="relative">
-  <div class="absolute">親要素の左上</div>
+  Relative
+  <div class="absolute">Absolute</div>
 </div>
 ```
 
 ```css
 .relative {
+  width: 300px;
+  height: 300px;
+  background: blue;
   position: relative;
 }
 
 .absolute {
+  width: 300px;
+  height: 300px;
+  background: purple;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 30px;
+  left: 30px;
 }
 ```
 
-// TODO: 画像追加
+> 実行結果:  
+> <img src="../img/05_beginners_trap/011.png" width="300">
 
 // TODO: ここから↓を別の章に持っていく(題意から外れているので)
 
