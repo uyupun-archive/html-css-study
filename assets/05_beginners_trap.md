@@ -16,22 +16,10 @@ CSSには**詳細度**(**Specificity**)と呼ばれる概念があり, 簡単に
 詳しい詳細度については, https://specifishity.com/ に分かりやすくまとめられている.
 
 # ボックスモデル
-HTMLの全ての要素は**ボックス**として表現され, ボックスは２種類の余白(`margin`, `padding`), 境界線(`border`), コンテンツで構成される.  
+HTMLの全ての要素は**ボックス**として表現され, ボックスは２種類の余白(`margin`, `padding`), 境界線(`border`), 幅(`width`), 高さ(`height`), そしてその中に入っている要素で構成される.  
 ボックスモデルを意識してCSSを書くことで, レイアウト崩れで悩むことは格段に減るだろう.
 
 <img src="../img/05_beginners_trap/001.png" width="600">
-
-上記画像をcssで記述した際のコードは以下のようになる.
-
-```css
-div {
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  border: 20px solid orange;
-  margin: 20px;
-}
-```
 
 # displayプロパティ
 
