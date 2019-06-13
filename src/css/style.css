@@ -44,19 +44,15 @@ ul {
 
 /* grid */
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-50 {
-  width: 50%;
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 /* sp */
 @media (max-width: 767px) {
-  .col-50 {
-    width: 100%;
+  .grid {
+    grid-template-columns: 100%;
   }
 }
 
@@ -69,12 +65,12 @@ ul {
 
 /* header */
 
-.header {
+header {
   background: linear-gradient(to right, #af384d, #b81a3e);
   padding: 100px 0;
 }
 
-.header p {
+header p {
   color: #fff;
 }
 
@@ -105,11 +101,7 @@ ul {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.header .row {
-  flex-direction: row;
-}
-
-.header .col-50:last-of-type {
+header .col:last-of-type {
   padding: 10px;
   text-align: right;
   box-sizing: border-box;
@@ -117,14 +109,15 @@ ul {
 
 /* sp */
 @media (max-width: 767px) {
-  .header .row {
-    flex-direction: column-reverse;
+  header .grid {
+    grid-template-columns: 100%;
   }
-  .header .col-50 {
+  header .col {
     text-align: center;
   }
-  .header .col-50:last-of-type {
+  header .col:last-of-type {
     text-align: center;
+    grid-row-start: 1;
   }
 }
 
@@ -148,28 +141,32 @@ ul {
   background: #f8f8f8;
 }
 
-.voices .row {
+.voices .grid {
   margin-bottom: 40px;
 }
 
-.voices .row:last-of-type {
+.voices .grid:last-of-type {
   margin-bottom: 0;
 }
 
-.voices .row:nth-of-type(2n) {
-  flex-direction: row-reverse;
+.voices .grid:nth-of-type(2n) .col:first-of-type {
+  text-align: right;
 }
 
-.voices .row:nth-of-type(2n) .col-50:first-of-type {
-  text-align: right;
+.voices .grid:nth-of-type(2n) .col:last-of-type {
+  grid-row-start: 1;
 }
 
 /* sp */
 @media (max-width: 767px) {
-  .voices .row:nth-of-type(2n) .col-50:first-of-type {
+  .voices .grid:nth-of-type(2n) .col:first-of-type {
     text-align: center;
+    grid-row-start: 1;
   }
-  .voices .col-50 {
+  .voices .grid:nth-of-type(2n) .col:last-of-type {
+    grid-row-start: 2;
+  }
+  .voices .col {
     text-align: center;
   }
 }
@@ -196,7 +193,7 @@ ul {
 
 /* footer */
 
-.footer {
+footer {
   padding: 100px 0;
   text-align: center;
   color: #fff;
