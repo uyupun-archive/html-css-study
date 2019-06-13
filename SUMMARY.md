@@ -9,4 +9,5 @@
 * [5. 初心者が陥りがちな罠](./assets/05_beginners_trap.md)
 * [6. Webサイトの雛形](./assets/06_website_framework.md)
 * [7. Webサイトの作成](./assets/07_make_website.md)
-* [8. さいごに](./assets/08_closing.md)
+* [8. 発展的なトピック](./assets/08_evolving_topic.md)
+* [9. さいごに](./assets/09_closing.md)
