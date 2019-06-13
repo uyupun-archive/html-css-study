@@ -74,7 +74,41 @@ positionプロパティの値には`static`, `relative`, `absolute`, `fixed`の�
 そのため, どのデバイスで閲覧してもレイアウトが崩れずに表示され, それぞれのデバイスに合った操作性を提供することが必要になる.  
 それを実現するのがレスポンシブ対応と言われるものである.  
 
-// TODO: view-portとかmedia-queryの説明
+まず, レスポンシブ対応をするために `head` 内にviewportを設定する.  
+viewportはブラウザの表示領域のことを指す.  
+スマートフォン等のデバイスはPC版のブラウザよりも表示領域が狭いためviewportを指定し, 各デバイスの表示領域に合わせる必要がある.
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+```
+
+上記のように `meta` タグ内で `name` 属性に `viewport` と値を入れることでviewportの情報を定義する.  
+そして `content` 属性で `viewport` の幅と高さとスケールを指定する.  
+`device-width` を指定することで, デバイスごとにviewportの幅が変更され, `initial-scale=1` を指定することで, その幅を等倍で表示する.
+
+次にメディアクエリを設定する.  
+メディアクエリとは, CSS3で追加された仕様の1つで, ブラウザの画面サイズに応じてCSSのスタイルを切り替える機能である.  
+メディアクエリは `link` タグ内で指定するか, `@import` でCSSファイルを読み込む場合に指定するか, `@media` で指定するかの3種類ある.  
+下記のコードはメディアクエリの指定の例である.
+
+```html
+<link rel="stylesheet" href="style.css" media="screen and (max-width: 767px)">
+```
+
+```css
+@import url("style.css") screen and (max-width: 767px);
+```
+
+```css
+@media (max-width: 767px) {
+  ...
+}
+```
+
+これらのコードは `width` が767px以下のブラウザに対してスタイルが適用される.  
+また `min-width: 768px` と定義すると,  `width` が768px以上のブラウザに対してスタイルが適用される.
 
 # CSS設計
 CSSは思っているよりも破綻しやすい.  
