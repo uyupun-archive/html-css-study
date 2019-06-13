@@ -45,18 +45,38 @@ span {
 |`grid`|子要素をグリッドレイアウト(要素を格子状に並べるレイアウト)によって列と行に整列する. `grid`要素内で列と行の数を定義する.|
 
 # positionプロパティ
+positionプロパティはボックスの配置方法（基準位置）を指定するために使用する.  
+指定するのは配置方法（基準位置）のみのため, 実際の表示位置の指定には, top, bottom, left, rightプロパティを併用して, 基準位置からの距離を設定する必要がある.  
+positionプロパティの値には, `static`, `relative`, `absolute`, `fixed`の4種類がある.
 
-// TODO: まずpositionプロパティが何なのかを説明
+|値|説明|
+|:--|:--|
+|`static`|初期値.<br>top, bottom, left, rightプロパティは適用されない.|
+|`relative`|相対位置への配置.<br>基準位置は, `static`を指定した場合に表示される位置と同じ.|
+|`absolute`|絶対位置への配置.<br>基準位置は, 親要素が`static`を指定している場合, ブラウザの左上に位置する.<br>親要素が`static`以外を指定している場合, 親要素の左上に位置する.|
+|`fixed`|絶対位置への配置.<br>`absolute`と同じ基準位置だが, スクロールしても位置が固定されたままとなる.|
 
-positionプロパティの値には`static`, `relative`, `absolute`, `fixed`の４種類が存在する.  
+下記のコードはpositionプロパティの使用例である.
 
-// TODO: それぞれの値の特徴を表にまとめる
+```html
+<div class="relative">
+  <div class="absolute">親要素の左上</div>
+</div>
+```
 
-親要素に `relative` , 子要素に `absolute` を指定するのがよく見る記述だ.  
-この2つの値は, 相対位置への配置か絶対位置への配置という違いがある.  
-また, `absolute` の親要素が `static` 以外の場合は, 親要素の左上が基準位置となり, `static` の場合はウィンドウの左上が基準位置となる.
+```css
+.relative {
+  position: relative;
+}
 
-// TODO: 簡単なサンプルを入れる
+.absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+```
+
+// TODO: 画像追加
 
 // TODO: ここから↓を別の章に持っていく(題意から外れているので)
 
