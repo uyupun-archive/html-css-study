@@ -14,18 +14,6 @@
 - [MDN HTML](https://developer.mozilla.org/ja/docs/Web/HTML)
 - [MDN CSS](https://developer.mozilla.org/ja/docs/Web/CSS)
 - [Web制作者のためのCSS設計の教科書](https://www.amazon.co.jp/dp/4844336355)
-- [Web制作者のためのSassの教科書](https://www.amazon.co.jp/dp/4295002356)
-- [最低限押さえておきたいEmmet省略記法（HTML）](https://qiita.com/flag_ryo/items/7ec402eeb4133a26939f)
-- [【初心者向け】Sassをいい感じに活用する](https://qiita.com/cotolier_risa/items/33ca1dcd700927dd7ba0)
-- [Bootstrap4 Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-
-EmmetはHTMLの入力補完を行うテキストエディタ用のプラグインである.  
-多くのテキストエディタで標準で搭載, またはプラグインが用意されている.  
-HTMLにおけるタグの入力は煩わしいが, Emmetによってその多くが解決される.
-
-### 上級者向け
-
-- [W3C](https://www.w3.org/)
 
 # HTML/CSS関連の便利なWebサイトの紹介
 
@@ -48,18 +36,28 @@ HTMLにおけるタグの入力は煩わしいが, Emmetによってその多く
 Google FontsはWebフォント, Font AwesomeとMaterial iconsはアイコンを提供している.
 
 ### CSSフレームワーク
+CSSフレームワークはHTMLのclassにあらかじめ用意された値を指定したり, コンポーネントを読み込むことで, CSSを書かなくてもデザインを行えるものである.  
+さらに自分でカスタマイズして使用することも多い.
 
-- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap4 Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 - [Element](https://element.eleme.io/#/en-US)
 
-### メタ言語
+### HTML/CSSの拡張
 
+- [最低限押さえておきたいEmmet省略記法（HTML）](https://qiita.com/flag_ryo/items/7ec402eeb4133a26939f)
 - [Sass](https://sass-lang.com/)
 - [Pug](https://pugjs.org/)
+- [Web制作者のためのSassの教科書](https://www.amazon.co.jp/dp/4295002356)
+- [【初心者向け】Sassをいい感じに活用する](https://qiita.com/cotolier_risa/items/33ca1dcd700927dd7ba0)
 
-SassはCSSを, PugはHTMLを拡張した言語である.
+**Emmet**はHTMLの入力補完を行うテキストエディタ用のプラグインである.  
+多くのテキストエディタで標準で搭載, またはプラグインが用意されている.  
+HTMLにおけるタグの入力は煩わしいが, Emmetによってその多くが解決される.
+
+**Sass**はCSSを, PugはHTMLを拡張した言語である.  
 それぞれ, HTML/CSSを効率的に記述するための様々記法や機能が追加されている.  
-Pugは流行が過ぎ去ってしまったが, Sassは未だに用いられることが多いため, 是非学んでほしい.
+**Pug**は流行が過ぎ去ってしまったが(正直, Emmetで事足りる), Sassは未だに用いられることが多いため, 是非学んでほしい.  
+ちなみにSassには**sass記法**と**scss記法**があるが, Rubyライクな記法を提供したsass記法はデザイナーからの評価が悪く, 現在はCSSライクなscss記法が主流となっている.
 
 ### その他
 
