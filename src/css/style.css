@@ -16,15 +16,6 @@ ul {
   padding: 0;
 }
 
-article {
-  padding: 100px 0;
-  background: #fff;
-}
-
-article:nth-of-type(2n) {
-  background: #f8f8f8;
-}
-
 /* common */
 /* container */
 
@@ -58,20 +49,6 @@ article:nth-of-type(2n) {
   }
 }
 
-.title {
-  font-size: 34px;
-  margin-bottom: 50px;
-  font-weight: normal;
-}
-
-.sub-title {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 80px;
-  font-size: 30px;
-  font-weight: normal;
-}
-
 .image {
   width: 250px;
   height: 250px;
@@ -80,12 +57,18 @@ article:nth-of-type(2n) {
 /* header */
 
 header {
-  background: linear-gradient(to right, #af384d, #b81a3e);
+  background: #af384d;
   padding: 100px 0;
 }
 
 .text-white {
   color: white;
+}
+
+.title {
+  font-size: 34px;
+  margin-bottom: 50px;
+  font-weight: normal;
 }
 
 .link {
@@ -123,6 +106,25 @@ header {
     text-align: center;
     grid-row-start: 1;
   }
+}
+
+/* main */
+
+article {
+  padding: 100px 0;
+  background: #fff;
+}
+
+article:nth-of-type(2n) {
+  background: #f8f8f8;
+}
+
+.sub-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /* overview, notice */
@@ -182,5 +184,5 @@ footer {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: linear-gradient(to right, #af384d, #b81a3e);
+  background: #af384d;
 }
