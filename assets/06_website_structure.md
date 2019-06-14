@@ -3,13 +3,13 @@
 よく見かけるWebサイトは, タイトルなどを書いておく**ヘッダー**, そのWebサイトが提供する情報を置く**コンテンツ**, コピーライトなどを書いておく**フッター**の３つの部分から構成されていることが多い.  
 これらの構成要素をHTML 5で記述する場合, それぞれ`header`, `main`, `footer`といったタグを用いる.
 
-<img src="../img/06_website_framework/001.png" width="400">
+<img src="../img/06_website_structure/001.png" width="400">
 
 さらにコンテンツを置く`main`の中身は ひとまとまりの記事を表す`article`, さらにそれぞれの節を表す`section`に分割できる.  
 また, メインコンテンツではない補足的な情報の場合は`aside`タグで記述する.  
 また, Webサイトのメニューは`nav`タグで記述する.
 
-<img src="../img/06_website_framework/002.png" width="400">
+<img src="../img/06_website_structure/002.png" width="400">
 
 ちなみに, HTML 5以前は`header`, `main`, `footer`, `article`, `section`, `aside`, `nav`といったタグが用意されていなかったため, `div`タグに`id`や`class`を指定することで表現していた.
 
@@ -44,7 +44,7 @@
 こういった左右の余白を制御するための仕組みが**Wrapper**と**Container**である.  
 WrapperはWebサイト全体に影響を及ぼすクラスとして使用し, Containerは各コンテンツごとに共通のクラスとして使用する.
 
-<img src="../img/06_website_framework/003.png" width="400">
+<img src="../img/06_website_structure/003.png" width="400">
 
 以下はWrapperとContainerを使用した例である.  
 分かりやすいように背景色を付けて表示してある.
@@ -105,4 +105,4 @@ footer {
 }
 ```
 > 実行結果:  
-> <img src="../img/06_website_framework/004.png" width="500">
+> <img src="../img/06_website_structure/004.png" width="500">
