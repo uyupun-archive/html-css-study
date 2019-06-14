@@ -35,37 +35,34 @@
   </main>
   <footer>フッター</footer>
 </body>
-<!-- 省略 -->
+<!-- 省略する -->
 ```
 
 # WrapperとContainer
 ディスプレイのサイズによって左右の余白を使い分ける必要がある.  
 例えばディスプレイの横幅が広ければ左右に余白を入れないと読みにくくなるし, 逆にスマートフォンのようにディスプレイが小さいと左右に余白がありすぎるとコンテンツの表示領域が極端に狭まってしまう.  
-こういった左右の余白を制御するための概念がWrapperとContainerである.  
+こういった左右の余白を制御するための仕組みがWrapperとContainerである.  
 WrapperはWebサイト全体に影響を及ぼすクラスとして使用し, Containerは各コンテンツごとに共通のクラスとして使用する.
 
 <img src="../img/06_website_framework/003.png" width="400">
 
 以下はWrapperとContainerを使用した例である.  
-分かりやすいように背景色を付けて表示する.
+分かりやすいように背景色を付けて表示してある.
 
 ```html
 <body>
   <div class="wrapper">
-    <header>
-      ヘッダー
-    </header>
-    <div class="container">
-      <nav>
-        ナビゲーション
-      </nav>
-      <main>
-        メイン
-      </main>
-    </div>
-    <footer>
-      フッター
-    </footer>
+    <header>ヘッダー</header>
+    <main>
+      <nav>ナビゲーション</nav>
+      <div class="container">
+        <article>
+          <section>セクション</section>
+        </article>
+        <aside>補足情報</aside>
+      </div>
+    </main>
+    <footer>フッター</footer>
   </div>
 </body>
 ```
@@ -81,23 +78,31 @@ body {
   background: red;
 }
 
-header footer {
-  background: orange;
-}
-
 .container {
   display: flex;
 }
 
-nav {
-  width: 30%;
-  background: blue;
+header {
+  background: lightblue;
 }
 
-main {
+nav {
+  background: yellow;
+}
+
+article {
   width: 70%;
   background: green;
 }
+
+aside {
+  width: 30%;
+  background: chocolate;
+}
+
+footer {
+  background: lightgreen;
+}
 ```
 > 実行結果:  
-> <img src="../img/06_website_framework/005.png" width="400">
+> <img src="../img/06_website_framework/004.png" width="500">
