@@ -206,12 +206,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="08_closing.html">
+        <li class="chapter " data-level="1.10" data-path="08_evolving_topic.html">
             
-                <a href="08_closing.html">
+                <a href="08_evolving_topic.html">
             
                     
-                    8. さいごに
+                    8. 発展的なトピック
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="09_closing.html">
+            
+                <a href="09_closing.html">
+            
+                    
+                    9. さいごに
             
                 </a>
             
@@ -264,68 +277,221 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="css&#x306E;&#x57FA;&#x790E;&#x77E5;&#x8B58;">CSS&#x306E;&#x57FA;&#x790E;&#x77E5;&#x8B58;</h1>
-<h3 id="&#x30BB;&#x30EC;&#x30AF;&#x30BF;">&#x30BB;&#x30EC;&#x30AF;&#x30BF;</h3>
-<p>&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x3068;&#x306F;&#x3069;&#x3053;&#x306E;&#x90E8;&#x5206;&#x306B;&#x5BFE;&#x3057;&#x3066;CSS&#x3092;&#x9069;&#x5FDC;&#x3055;&#x305B;&#x308B;&#x304B;&#x3092;&#x6C7A;&#x3081;&#x308B;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;.<br>&#x4EE5;&#x4E0B;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306E;&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x3092;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3044;&#x308B;.</p>
-<pre><code class="lang-css">&#x30BF;&#x30B0;&#x540D; {~}      /* &#x30BF;&#x30B0;&#x306F;&#x305D;&#x306E;&#x307E;&#x307E;&#x6307;&#x5B9A;&#x3059;&#x308B; */
-#id&#x540D; {~}      /* id&#x540D;&#x306E;&#x524D;&#x306B;#&#x3092;&#x4ED8;&#x3051;&#x308B; */
-.class&#x540D; {~}   /* class&#x540D;&#x306E;&#x524D;&#x306B;.&#x3092;&#x4ED8;&#x3051;&#x308B; */
-* {~}          /* &#x3059;&#x3079;&#x3066;&#x306E;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x9069;&#x5FDC;&#x3059;&#x308B; */
-&#x25CB;, &#x25B3; {~}       /* &#x8907;&#x6570;&#x306E;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B; */
-&#x25CB; &#x25B3; {~}        /* &#x25CB;&#x5185;&#x306B;&#x3042;&#x308B;&#x25B3;&#x306B;&#x9069;&#x5FDC;&#x3059;&#x308B; */
-&#x25CB; &gt; &#x25B3; {~}      /* &#x25CB;&#x306E;1&#x3064;&#x4E0B;&#x306E;&#x968E;&#x5C64;&#x306E;&#x25B3;(&#x5B50;&#x8981;&#x7D20;)&#x306B;&#x9069;&#x5FDC;&#x3059;&#x308B; */
-&#x25CB; + &#x25B3; {~}      /* &#x25CB;&#x3068;&#x540C;&#x3058;&#x968E;&#x5C64;&#x306E;&#x3059;&#x3050;&#x5F8C;&#x306B;&#x3042;&#x308B;&#x25B3;&#x306E;&#x307F;&#x306B;&#x9069;&#x5FDC;&#x3059;&#x308B; */
-&#x25CB; ~ &#x25B3; {~}      /* &#x25CB;&#x3068;&#x540C;&#x3058;&#x968E;&#x5C64;&#x306E;&#x5F8C;&#x306B;&#x7D9A;&#x304F;&#x25B3;&#x306B;&#x9069;&#x5FDC;&#x3059;&#x308B; */
+                                <h1 id="css&#x306E;&#x8A18;&#x8FF0;&#x5F62;&#x5F0F;">CSS&#x306E;&#x8A18;&#x8FF0;&#x5F62;&#x5F0F;</h1>
+<p>CSS&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x5F62;&#x5F0F;&#x3067;&#x8A18;&#x8FF0;&#x3055;&#x308C;&#x308B;.</p>
+<pre><code class="lang-css">&#x30BB;&#x30EC;&#x30AF;&#x30BF; {
+  &#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;: &#x5024;
+}
 </code></pre>
-<h3 id="&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x5024;">&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x5024;</h3>
-<p>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x9069;&#x5FDC;&#x3055;&#x305B;&#x308B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3067;&#x3042;&#x308B;.<br>&#x307E;&#x305F;, &#x5024;&#x3068;&#x306F;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x304C;&#x6301;&#x3064;&#x305D;&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306E;&#x8A2D;&#x5B9A;&#x5024;&#x3067;&#x3042;&#x308B;.<br>&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x5024;&#x3092; <code>:(&#x30B3;&#x30ED;&#x30F3;)</code> &#x3067;&#x533A;&#x5207;&#x3063;&#x3066;&#x8868;&#x3059;.<br>&#x5404;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x306F;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x5024;&#x304C;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;.<br>&#x4EE5;&#x4E0B;&#x306F;&#x3088;&#x304F;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x308B;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3067;&#x3042;&#x308B;.</p>
+<p>&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306F;HTML&#x306E;&#x3069;&#x306E;&#x90E8;&#x5206;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;&#x304B;&#x306E;&#x6307;&#x5B9A;, &#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306F;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;&#x306E;&#x304B;&#x306E;&#x6307;&#x5B9A;, &#x5024;&#x306F;&#x305D;&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x304C;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x5EA6;&#x5408;&#x3044;&#x306A;&#x306E;&#x304B;(&#x30B5;&#x30A4;&#x30BA;&#x3084;&#x8272;&#x306A;&#x3069;)&#x306E;&#x6307;&#x5B9A;&#x3092;&#x884C;&#x3046;.  </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>TKG&#x306E;&#x4F5C;&#x308A;&#x65B9;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+<blockquote>
+<p>&#x5B9F;&#x884C;&#x7D50;&#x679C;:<br><img src="../img/04_css_basic_knowledge/001.png" width="200"></p>
+</blockquote>
+<p>&#x6B21;&#x9805;&#x4EE5;&#x964D;&#x3067;&#x306F;, &#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x30FB;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x30FB;&#x5024;&#x306B;&#x305D;&#x308C;&#x305E;&#x308C;&#x3069;&#x3093;&#x306A;&#x7A2E;&#x985E;&#x304C;&#x3042;&#x308A;, &#x3069;&#x3093;&#x306A;&#x50CD;&#x304D;&#x3092;&#x3059;&#x308B;&#x306E;&#x304B;, &#x3082;&#x3046;&#x5C11;&#x3057;&#x7D30;&#x304B;&#x304F;&#x898B;&#x3066;&#x3044;&#x304F;.</p>
+<h1 id="&#x30BB;&#x30EC;&#x30AF;&#x30BF;">&#x30BB;&#x30EC;&#x30AF;&#x30BF;</h1>
+<p><strong>&#x30BB;&#x30EC;&#x30AF;&#x30BF;</strong>&#x3068;&#x306F;HTML&#x306E;&#x3069;&#x306E;&#x90E8;&#x5206;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3055;&#x305B;&#x308B;&#x304B;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;.<br>&#x4E3B;&#x8981;&#x306A;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x7A2E;&#x985E;&#x304C;&#x3042;&#x308B;.</p>
+<pre><code class="lang-css">/* &#x5168;&#x79F0;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x5168;&#x3066;&#x306E;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+* { ~ }
+
+/* &#x8981;&#x7D20;&#x578B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x8981;&#x7D20;&#x540D; { ~ }
+
+/* class&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;class&#x3092;&#x6301;&#x3064;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+.class&#x540D; { ~ }
+
+/* id&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;ID&#x3092;&#x6301;&#x3064;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+#id&#x540D; { ~ }
+
+/* &#x5C5E;&#x6027;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C5E;&#x6027;&#x3092;&#x6301;&#x3064;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x8981;&#x7D20;&#x540D;[&#x5C5E;&#x6027;&#x540D;] { ~ }
+
+/* &#x5C5E;&#x6027;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;&#x5C5E;&#x6027;&#x3068;&#x5024;&#x3092;&#x6301;&#x3064;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x8981;&#x7D20;&#x540D;[&#x5C5E;&#x6027;&#x540D;=&quot;&#x5024;&quot;] { ~ }
+
+/* &#x8907;&#x6570;&#x306E;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x6307;&#x5B9A;&#x3057;&#x305F;&#x8907;&#x6570;&#x306E;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x30BB;&#x30EC;&#x30AF;&#x30BF;1, &#x30BB;&#x30EC;&#x30AF;&#x30BF;2 { ~ }
+
+/* &#x5B50;&#x5B6B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x30BB;&#x30EC;&#x30AF;&#x30BF;1&#x3088;&#x308A;&#x3082;&#x4E0B;&#x306E;&#x968E;&#x5C64;&#x306B;&#x3042;&#x308B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;2&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x30BB;&#x30EC;&#x30AF;&#x30BF;1 &#x30BB;&#x30EC;&#x30AF;&#x30BF;2 { ~ }
+
+/* &#x5B50;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x30BB;&#x30EC;&#x30AF;&#x30BF;1&#x306E;&#x76F4;&#x4E0B;&#x306B;&#x5B58;&#x5728;&#x3059;&#x308B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;2&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x30BB;&#x30EC;&#x30AF;&#x30BF;1 &gt; &#x30BB;&#x30EC;&#x30AF;&#x30BF;2 { ~ }
+
+/* &#x96A3;&#x63A5;&#x30BB;&#x30EC;&#x30AF;&#x30BF;: &#x30BB;&#x30EC;&#x30AF;&#x30BF;1&#x306E;&#x76F4;&#x5F8C;&#x306B;&#x96A3;&#x63A5;&#x3057;&#x3066;&#x3044;&#x308B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;2&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B; */
+&#x30BB;&#x30EC;&#x30AF;&#x30BF;1 + &#x30BB;&#x30EC;&#x30AF;&#x30BF;2 { ~ }
+</code></pre>
+<h1 id="&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x5024;">&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3068;&#x5024;</h1>
+<p><strong>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;</strong>&#x3068;&#x306F;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;&#x306E;&#x304B;&#x306E;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;.<br>&#x307E;&#x305F;, <strong>&#x5024;</strong>&#x3068;&#x306F;&#x305D;&#x306E;&#x30C7;&#x30B6;&#x30A4;&#x30F3;&#x304C;&#x3069;&#x306E;&#x3088;
+&#x3046;&#x306A;&#x5EA6;&#x5408;&#x3044;&#x306A;&#x306E;&#x304B;(&#x30B5;&#x30A4;&#x30BA;&#x3084;&#x8272;&#x306A;&#x3069;)&#x306E;&#x6307;&#x5B9A;&#x3092;&#x884C;&#x3046;&#x3082;&#x306E;&#x3067;&#x3042;&#x308B;.  </p>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x983B;&#x7E41;&#x306B;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x308B;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3092;&#x307E;&#x3068;&#x3081;&#x305F;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x540D;</th>
+<th style="text-align:left">&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>width</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x5E45;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>height</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x9AD8;&#x3055;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>padding</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x4F59;&#x767D;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>margin</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x4F59;&#x767D;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>border</code></td>
+<td style="text-align:left">&#x30DC;&#x30FC;&#x30C0;&#x30FC;&#x306E;&#x592A;&#x3055;&#x3084;&#x8272;&#x306A;&#x3069;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>color</code></td>
+<td style="text-align:left">&#x6587;&#x5B57;&#x8272;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>font-size</code></td>
+<td style="text-align:left">&#x6587;&#x5B57;&#x30B5;&#x30A4;&#x30BA;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>text-align</code></td>
+<td style="text-align:left">&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3084;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x8868;&#x793A;&#x4F4D;&#x7F6E;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>background-color</code></td>
+<td style="text-align:left">&#x80CC;&#x666F;&#x8272;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>position</code></td>
+<td style="text-align:left">&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306E;&#x914D;&#x7F6E;&#x65B9;&#x6CD5;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x64EC;&#x4F3C;&#x8981;&#x7D20;&#x3068;&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;">&#x64EC;&#x4F3C;&#x8981;&#x7D20;&#x3068;&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;</h1>
+<p><strong>&#x64EC;&#x4F3C;&#x8981;&#x7D20;</strong>&#x306F;&#x8981;&#x7D20;&#x306E;&#x4E00;&#x90E8;&#x5206;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;.<br>&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306E;&#x5F8C;&#x306B;<code>::</code>(&#x30B3;&#x30ED;&#x30F3;&#xFF12;&#x3064;)&#x3092;&#x4ED8;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x983B;&#x7E41;&#x306B;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x308B;&#x7591;&#x4F3C;&#x8981;&#x7D20;&#x3092;&#x307E;&#x3068;&#x3081;&#x305F;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x7591;&#x4F3C;&#x8981;&#x7D20;</th>
+<th style="text-align:left">&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>::before</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x76F4;&#x524D;&#x306B;&#x5185;&#x5BB9;&#x3092;&#x633F;&#x5165;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::after</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x306E;&#x30B3;&#x30F3;&#x30C6;&#x30F3;&#x30C4;&#x306E;&#x76F4;&#x5F8C;&#x306B;&#x5185;&#x5BB9;&#x3092;&#x633F;&#x5165;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::first-letter</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x5185;&#x306E;&#x6700;&#x521D;&#x306E;&#x884C;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::first-line</code></td>
+<td style="text-align:left">&#x8981;&#x7D20;&#x5185;&#x306E;&#x6700;&#x521D;&#x306E;&#x6587;&#x5B57;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;<code>before</code>&#x3092;&#x4F8B;&#x306B;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x793A;&#x3059;.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>TKG&#x306E;&#x4F5C;&#x308A;&#x65B9;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&apos;&#x304A;&#x3044;&#x3057;&#x3044;&apos;</span>;
+}
+</code></pre>
+<blockquote>
+<p>&#x5B9F;&#x884C;&#x7D50;&#x679C;:<br><img src="../img/04_css_basic_knowledge/002.png" width="500"></p>
+</blockquote>
+<p><strong>&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;</strong>&#x306F;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x8981;&#x7D20;&#x5168;&#x3066;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x304C;&#x5F71;&#x97FF;&#x3055;&#x308C;&#x308B;.<br>&#x6587;&#x66F8;&#x69CB;&#x9020;&#x306E;&#x7BC4;&#x56F2;&#x5916;&#x306B;&#x3042;&#x308B;&#x60C5;&#x5831;&#x3084;&#x5358;&#x4F53;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x3067;&#x8868;&#x73FE;&#x3067;&#x304D;&#x306A;&#x3044;&#x3082;&#x306E;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x305F;.<br>&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306E;&#x5F8C;&#x306B;<code>:</code>(&#x30B3;&#x30ED;&#x30F3;)&#x3092;&#x4ED8;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;.  </p>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x983B;&#x7E41;&#x306B;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x308B;&#x7591;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x307E;&#x3068;&#x3081;&#x305F;.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;</th>
+<th style="text-align:left">&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>:hover</code></td>
+<td style="text-align:left">&#x30AB;&#x30FC;&#x30BD;&#x30EB;&#x304C;&#x4E57;&#x3063;&#x3066;&#x3044;&#x308B;&#x8981;&#x7D20;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>:focus</code></td>
+<td style="text-align:left">&#x30D5;&#x30A9;&#x30FC;&#x30AB;&#x30B9;&#x3055;&#x308C;&#x305F;&#x8981;&#x7D20;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>:nth-child(n)</code></td>
+<td style="text-align:left">n&#x756A;&#x76EE;&#x306E;&#x5B50;&#x8981;&#x7D20;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>:nth-of-type(n)</code></td>
+<td style="text-align:left">n&#x756A;&#x76EE;&#x306E;&#x305D;&#x306E;&#x7A2E;&#x985E;&#x306E;&#x8981;&#x7D20;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>:not(&#x30BB;&#x30EC;&#x30AF;&#x30BF;)</code></td>
+<td style="text-align:left">&#x5F15;&#x6570;&#x3067;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306B;&#x5F53;&#x3066;&#x306F;&#x307E;&#x3089;&#x306A;&#x3044;&#x8981;&#x7D20;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x9069;&#x7528;&#x3059;&#x308B;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;<code>nth-child</code>&#x3092;&#x4F8B;&#x306B;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x793A;&#x3059;.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5BFF;&#x53F8;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x30E9;&#x30FC;&#x30E1;&#x30F3;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x713C;&#x8089;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+
+<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:nth-child(2)</span> {
+  <span class="hljs-attribute">color</span>: blue;
+}
+</code></pre>
+<blockquote>
+<p>&#x5B9F;&#x884C;&#x7D50;&#x679C;:<br><img src="../img/04_css_basic_knowledge/003.png" width="300"></p>
+</blockquote>
+<h1 id="css&#x306E;&#x8A18;&#x8FF0;&#x4F8B;">CSS&#x306E;&#x8A18;&#x8FF0;&#x4F8B;</h1>
+<p>CSS&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#xFF13;&#x7A2E;&#x985E;&#x306E;&#x8A18;&#x8FF0;&#x306E;&#x4ED5;&#x65B9;&#x304C;&#x3042;&#x308B;.</p>
 <ul>
-<li>width</li>
-<li>height</li>
-<li>padding</li>
-<li>border</li>
-<li>margin</li>
-<li>color</li>
-<li>font-size</li>
-<li>text-align</li>
-<li>background</li>
-<li>position</li>
+<li>CSS&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x3066;HTML&#x304B;&#x3089;&#x8AAD;&#x307F;&#x8FBC;&#x3080;</li>
+<li>HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;<code>style</code>&#x30BF;&#x30B0;&#x5185;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;</li>
+<li>HTML&#x306E;&#x30BF;&#x30B0;&#x306E;<code>style</code>&#x5C5E;&#x6027;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;</li>
 </ul>
-<h3 id="&#x64EC;&#x4F3C;&#x8981;&#x7D20;-&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;">&#x64EC;&#x4F3C;&#x8981;&#x7D20; &#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;</h3>
-<p>&#x64EC;&#x4F3C;&#x8981;&#x7D20;&#x306F;&#x8981;&#x7D20;&#x306E;&#x4E00;&#x90E8;&#x5206;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;.<br>&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306E;&#x5F8C;&#x306B; <code>:(&#x30B3;&#x30ED;&#x30F3;)</code> &#x3092;2&#x3064;&#x7D9A;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;.<br>&#x4EE5;&#x4E0B;&#x306F;&#x3088;&#x304F;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x64EC;&#x4F3C;&#x8981;&#x7D20;&#x3067;&#x3042;&#x308B;.</p>
-<ul>
-<li>::before</li>
-<li>::after</li>
-<li>::first-letter</li>
-<li>::first-line</li>
-</ul>
-<p>&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x8981;&#x7D20;&#x5168;&#x3066;&#x306B;&#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x304C;&#x5F71;&#x97FF;&#x3055;&#x308C;&#x308B;.<br>&#x6587;&#x66F8;&#x69CB;&#x9020;&#x306E;&#x7BC4;&#x56F2;&#x5916;&#x306B;&#x3042;&#x308B;&#x60C5;&#x5831;&#x3084;&#x5358;&#x4F53;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x3067;&#x8868;&#x73FE;&#x3067;&#x304D;&#x306A;&#x3044;&#x3082;&#x306E;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x5C0E;&#x5165;&#x3055;&#x308C;&#x305F;. 
-&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#x30BB;&#x30EC;&#x30AF;&#x30BF;&#x306E;&#x5F8C;&#x306B; <code>:(&#x30B3;&#x30ED;&#x30F3;)</code> &#x3092;&#x4ED8;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;.<br>&#x4EE5;&#x4E0B;&#x306F;&#x3088;&#x304F;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x64EC;&#x4F3C;&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x3042;&#x308B;.</p>
-<ul>
-<li>:hover</li>
-<li>:focus</li>
-<li>:nth-child()</li>
-<li>:nth-of-type()</li>
-<li>:not</li>
-</ul>
-<h3 id="&#x8A18;&#x8FF0;&#x4F8B;">&#x8A18;&#x8FF0;&#x4F8B;</h3>
-<p>CSS&#x306F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5206;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x304B;, <code>style</code> &#x30BF;&#x30B0;&#x5185;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x304B;, <code>style</code> &#x5C5E;&#x6027;&#x3067;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x304B;&#x306E;3&#x7A2E;&#x985E;&#x306E;&#x8A18;&#x8FF0;&#x306E;&#x4ED5;&#x65B9;&#x304C;&#x3042;&#x308B;.</p>
-<p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5206;&#x3051;&#x3066;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E; <code>head</code> &#x30BF;&#x30B0;&#x3067;&#x5185;&#x3067;&#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x3057;&#x3066;CSS&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x3080;.</p>
+<p>CSS&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, &#x8A18;&#x8FF0;&#x3057;&#x305F;CSS&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;<code>head</code>&#x30BF;&#x30B0;&#x5185;&#x3067;&#x8AAD;&#x307F;&#x8FBC;&#x3080;.<br>&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x306B;&#x306F; <code>link</code> &#x30BF;&#x30B0;&#x3092;&#x4F7F;&#x7528;&#x3057;, <code>rel</code>&#x5C5E;&#x6027;&#x306B;&#x306F;<code>stylesheet</code>, <code>href</code>&#x5C5E;&#x6027;&#x306B;&#x306F;&#x8AAD;&#x307F;&#x8FBC;&#x3080;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30D1;&#x30B9;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;.<br>&#x3053;&#x306E;&#x65B9;&#x6CD5;&#x304C;&#x6700;&#x3082;&#x4FDD;&#x5B88;&#x6027;&#x304C;&#x9AD8;&#x3044;&#x305F;&#x3081;, &#x5927;&#x62B5;&#x306F;&#x3053;&#x306E;&#x65B9;&#x6CD5;&#x3067;CSS&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;css/style.css&quot;</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<p><code>style</code> &#x30BF;&#x30B0;&#x5185;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E; <code>head</code> &#x30BF;&#x30B0;&#x3067;&#x5185;&#x3067; <code>style</code> &#x30BF;&#x30B0;&#x3092;&#x8A18;&#x8FF0;&#x3057;, &#x305D;&#x306E;&#x4E2D;&#x306B;CSS&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<p>HTML&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;<code>style</code>&#x30BF;&#x30B0;&#x5185;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, <code>style</code>&#x30BF;&#x30B0;&#x3092;<code>head</code>&#x30BF;&#x30B0;&#x76F4;&#x4E0B;&#x306B;&#x8A18;&#x8FF0;&#x3057;, &#x305D;&#x306E;&#x4E2D;&#x306B;CSS&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- &#x7701;&#x7565; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
     <span class="hljs-selector-tag">body</span> {
       <span class="hljs-attribute">color</span>: red;
     }
   </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- &#x7701;&#x7565; --&gt;</span>
 </code></pre>
-<p><code>style</code> &#x5C5E;&#x6027;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, &#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<p>HTML&#x306E;&#x30BF;&#x30B0;&#x306E;<code>style</code>&#x5C5E;&#x6027;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;, &#x4EE5;&#x4E0B;&#x306E;&#x69D8;&#x306B;&#x8A18;&#x8FF0;&#x3059;&#x308B;.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red; background: blue;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
 
                                 
@@ -370,7 +536,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. CSSの基礎知識","level":"1.6","depth":1,"next":{"title":"5. 初心者が陥りがちな罠","level":"1.7","depth":1,"path":"assets/05_beginners_trap.md","ref":"./assets/05_beginners_trap.md","articles":[]},"previous":{"title":"3. HTMLの基礎知識","level":"1.5","depth":1,"path":"assets/03_html_basic_knowledge.md","ref":"./assets/03_html_basic_knowledge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/04_css_basic_knowledge.md","mtime":"2019-06-10T16:38:29.831Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-10T18:07:46.093Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. CSSの基礎知識","level":"1.6","depth":1,"next":{"title":"5. 初心者が陥りがちな罠","level":"1.7","depth":1,"path":"assets/05_beginners_trap.md","ref":"./assets/05_beginners_trap.md","articles":[]},"previous":{"title":"3. HTMLの基礎知識","level":"1.5","depth":1,"path":"assets/03_html_basic_knowledge.md","ref":"./assets/03_html_basic_knowledge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"assets/04_css_basic_knowledge.md","mtime":"2019-06-13T16:45:09.229Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-14T06:58:11.222Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
