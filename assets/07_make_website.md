@@ -57,6 +57,8 @@ HTMLの雛形の書き方については, [第３章 HTMLの基礎知識 > HTML�
 カレントディレクトリ内の`favicon.ico`というファビコンを読み込んでいる.  
 ファビコンとは, Webブラウザのタブに表示される画像のことである.
 
+<img src="../img/07_make_website/002.png" width="300">
+
 # リセットCSSの作成
 たとえCSSを一行も書かなくても, Webブラウザによってデフォルトのスタイルが適用される.  
 このデフォルトのスタイルによって思わぬレイアウト崩れやWebブラウザごとの差異が起こることがあるので, **リセットCSS**と呼ばれるCSSファイルを読み込んで, デフォルトのスタイルを打ち消しておく.
@@ -122,7 +124,7 @@ ul {
 ```
 
 > 実行結果:  
-> <img src="../img/07_make_website/008.png" width="300">
+> <img src="../img/07_make_website/003.png" width="300">
 
 # メインコンテンツの作成
 次に, メインコンテンツを作成する.  
@@ -167,7 +169,7 @@ grid-template-columnsプロパティを使用することで列の数を定義�
 まずはヘッダーから作成する.  
 以下の画像のように, 要素ごとのまとまりを作成すると, HTML文が記述しやすくなる.
 
-<img src="../img/07_make_website/002.png" width="600">
+<img src="../img/07_make_website/004.png" width="600">
 
 ```html
 <header>
@@ -317,9 +319,9 @@ article:nth-of-type(2n) {
 また, ここでは解説は省略する.    
 以下の画像は開催情報・お知らせの要素ごとのまとまりを表している.
 
-<img src="../img/07_make_website/003.png" width="600">
-
 <img src="../img/07_make_website/005.png" width="600">
+
+<img src="../img/07_make_website/006.png" width="600">
 
 ```html
 <article>
@@ -369,7 +371,7 @@ article:nth-of-type(2n) {
 # 入会者の声の作成
 最後に入会者の声の項目を作成する.  
 
-<img src="../img/07_make_website/004.png" width="600">
+<img src="../img/07_make_website/007.png" width="600">
 
 ```html
 <main>
@@ -445,7 +447,7 @@ grid-row-startプロパティはカラムの表示順序を入れ替えること
 # フッターの作成
 フッターは簡単に作成できるため, 解説は省略する.
 
-<img src="../img/07_make_website/006.png" width="600">
+<img src="../img/07_make_website/008.png" width="600">
 
 ```html
 <footer>
