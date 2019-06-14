@@ -1,5 +1,6 @@
 # さいごに
-// TODO
+ここまで学んできて, Webサイトを作るための基礎を身につけられたと思う(そうであってほしい).  
+他にもHTML/CSSには様々な機能があり, Pug/SassといったHTML/CSSを拡張した言語(後述)やJavaScript, バックエンド技術(PHP/Ruby/Python/Node.js/Java etc ...)など, 学ぶことは山のようにあるので是非頑張って習得してほしい.
 
 # HTML/CSSを勉強できるWebサイト・書籍の紹介
 
@@ -56,8 +57,9 @@ Google FontsはWebフォント, Font AwesomeとMaterial iconsはアイコンを�
 - [Sass](https://sass-lang.com/)
 - [Pug](https://pugjs.org/)
 
-SassはCSSを, PugはHTMLを拡張した言語で, HTML/CSSを効率的に記述するための技術である.  
-Pugは流行が過ぎ去ってしまったが, Sassは未だに用いられることが多い.
+SassはCSSを, PugはHTMLを拡張した言語である.
+それぞれ, HTML/CSSを効率的に記述するための様々記法や機能が追加されている.  
+Pugは流行が過ぎ去ってしまったが, Sassは未だに用いられることが多いため, 是非学んでほしい.
 
 ### その他
 
