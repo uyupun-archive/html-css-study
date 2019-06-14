@@ -75,6 +75,83 @@ CSS設計にも様々な種類があり, 導入の際にはそのプロジェク
 |MCSS|OOCSSとBEMのコンセプトを元にして考えられたCSS設計.<br>Foundation, Base, Project, Cosmeticの4つのレイヤーで構成される.|
 |FLOCSS|上記4つのCSS設計を元にして考えられたCSS設計.<br>Foundation, Layout, Objectの3つのレイヤーと, Objectレイヤーの子レイヤーである, Component, Project, Utilityで構成される.|
 
+今回作成したWebサイトではOOCSSを元にCSSを作成した.  
+そのため, OOCSSをもう少し詳しく説明する.
+
+OOCSSは原則として以下の２つを挙げている.
+
+- 構造と見た目の分離
+- コンテナーとコンテンツを分離
+
+以下のようなコードがあるとする.
+
+```css
+.btn-red {
+  padding: 5px 10px;
+  background: red;
+}
+
+.btn-blue {
+  padding: 5px 10px;
+  background: blue;
+}
+
+.btn-yellow {
+  padding: 5px 10px;
+  background: yellow;
+}
+```
+
+このようなコードは`padding: 5px 10px;`が冗長である.  
+これを解決するために以下のように修正する.
+
+```css
+.btn {
+  padding: 5px 10px;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+```
+
+これが構造と見た目の分離である.  
+コンテナーとコンテンツを分離は, 以下のようなコードを修正する.
+
+```css
+#header .img {
+  width: 250px;
+  height: 250px;
+}
+
+#footer .img {
+  width: 150px;
+  height: 150px;
+}
+```
+
+上記のようなコードは場所に依存してしまっているため, imgオブジェクトを拡張する方がよい.
+
+```css
+.img {
+  width: 250px;
+  height: 250px;
+}
+
+.small-img {
+  width: 150px;
+  height: 150px;
+}
+```
+
 # Pug
 
 # Emmet
