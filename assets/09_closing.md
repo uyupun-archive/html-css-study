@@ -18,7 +18,7 @@
 - [【初心者向け】Sassをいい感じに活用する](https://qiita.com/cotolier_risa/items/33ca1dcd700927dd7ba0)
 - [Bootstrap4 Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
-EmmetはHTMLの入力補完を行うテキストエディタ用のプラグイン.  
+EmmetはHTMLの入力補完を行うテキストエディタ用のプラグインである.  
 多くのテキストエディタで標準で搭載, またはプラグインが用意されている.  
 HTMLにおけるタグの入力は煩わしいが, Emmetによってその多くが解決される.
 
@@ -27,11 +27,6 @@ HTMLにおけるタグの入力は煩わしいが, Emmetによってその多く
 - [W3C](https://www.w3.org/)
 
 # HTML/CSS関連の便利なWebサイトの紹介
-
-// TODO: Pug
-PugというHTMLをより簡潔な構文で記述できる言語も2016〜2017年頃に流行したが, 最近はあまり見かけなくなった.
-
-Sass, Bootstrapの説明もここで
 
 ### プロトタイピングツール
 
@@ -55,6 +50,14 @@ Google FontsはWebフォント, Font AwesomeとMaterial iconsはアイコンを�
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Element](https://element.eleme.io/#/en-US)
+
+### メタ言語
+
+- [Sass](https://sass-lang.com/)
+- [Pug](https://pugjs.org/)
+
+SassはCSSを, PugはHTMLを拡張した言語で, HTML/CSSを効率的に記述するための技術である.  
+Pugは流行が過ぎ去ってしまったが, Sassは未だに用いられることが多い.
 
 ### その他
 
