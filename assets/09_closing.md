@@ -54,14 +54,14 @@ CSSフレームワークはHTMLのclassにあらかじめ用意された値を�
 多くのテキストエディタで標準で搭載, またはプラグインが用意されている.  
 HTMLにおけるタグの入力は煩わしいが, Emmetによってその多くが解決される.
 
-**Sass**はCSSを, **Pug**はHTMLを拡張した言語である.  
+**Pug**はHTMLを, **Sass**はCSSを拡張した言語である.  
 それぞれ, HTML/CSSを効率的に記述するための様々記法や機能が追加されている.  
 Pugは流行が過ぎ去ってしまったが(正直, Emmetで事足りる), Sassは未だに用いられることが多いため, 是非学んでほしい.  
 ちなみにSassには**sass記法**と**scss記法**があるが, Rubyライクな記法を提供したsass記法はデザイナーからの評価が悪く, 現在はCSSライクなscss記法が主流となっている.
 
 ### その他
 
-- [caniuse.com](caniuse.com)
+- [caniuse.com](https://caniuse.com)
 - [HTML Reference](https://htmlreference.io/)
 - [CSS Reference](https://cssreference.io/)
 
