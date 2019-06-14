@@ -4,12 +4,12 @@
 
 # 素材の入手
 作成に先立って, 今回作成するWebサイトに必要な素材(画像, テキスト)をダウンロードする.  
-https://github.com/after-school-study-group/html-css-study-parts にアクセスし, Download Zipを押すとZipファイルがダウンロードされるため, 各自のPCで展開しておく.
+https://github.com/after-school-study-group/html-css-study-parts にアクセスし, "Download Zip"を押すとZipファイルがダウンロードされるため, 各自のPCで展開しておく.
 
 <img src="../img/07_make_website/001.png" width="300">
 
 # ファイルとディレクトリの作成
-まずは必要なファイルとディレクトリを作成する.
+まずは必要なファイルとディレクトリを作成する.  
 構成は以下の通りである.
 
 ```
@@ -25,38 +25,51 @@ my-site
     takashi3.jpg
 ```
 
+HTMLは`index.html`, CSSは`style.css`に記述していく.  
 なお, `favicon.ico`と`images`ディレクトリ以下の画像は前項でダウンロードした素材の中に入っている.
 
-まず初めにPC版を作成し, その後レスポンシブ対応のためのコードを追加していく.  
+# 進め方
+まず初めにPC版のレイアウトを作成し, その後スマートフォンなどにも対応できるようコードを追加していく.  
 レスポンシブ対応については, 次章で詳しく紹介している.
 
-## ヘッダ情報の記述
-まず初めに, ヘッダ情報を記述する.
+# HTMLの雛形の作成
+まず初めに, HTMLの雛形を作成する.  
+HTMLの雛形の書き方については, [HTMLの基礎知識 > HTMLの雛形](http://localhost:4000/assets/03_html_basic_knowledge.html)で既に詳しく解説した.
 
 ```html
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <title>ほうかご勉強会</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ここにコンテンツが入ります -->
+  </body>
 </html>
 ```
 
 5行目:  
-カレントディレクトリ内のcssフォルダ内の`style.css`というCSSファイルを読み込んでいる.
+カレントディレクトリにあるcssディレクトリ内の`style.css`という名前のCSSファイルを読み込んでいる.
 
-6行目:
-カレントディレクトリ内の`favicon.ico`というファビコンを読み込んでいる.
+6行目:  
+カレントディレクトリ内の`favicon.ico`というファビコンを読み込んでいる.  
+// TODO: ファビコンが何かの説明
 
-## リセットCSSの作成
-次にリセットCSSを作成する.  
-リセットCSSとは, ブラウザによって異なるデフォルト値のCSSを打ち消し, ブラウザ間の表示を揃えるためのCSSファイルのことである.  
-有名なリセットCSSには[Eric Meyer’s “Reset CSS” 2.0](https://cssreset.com/scripts/eric-meyer-reset-css/)や[Normalize.css](https://necolas.github.io/normalize.css/)がある.  
-今回は簡易的なリセットCSSを作成する.
+# リセットCSSの作成
+たとえCSSを一行も書かなくても, Webブラウザによってデフォルトのスタイルが適用される.  
+このデフォルトのスタイルによって思わぬレイアウト崩れやWebブラウザごとの差異が起こることがあるので, **リセットCSS**と呼ばれるCSSファイルを読み込んで, デフォルトのスタイルを打ち消しておく.
+
+有名なリセットCSSには,
+
+- [Eric Meyer’s “Reset CSS” 2.0](https://cssreset.com/scripts/eric-meyer-reset-css/)
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+
+などがある.
+
+今回は簡易的なリセットCSSを自分で作成することで対応する.
 
 ```css
 body {
@@ -75,10 +88,9 @@ ul {
 ```
 
 3行目:  
-font-familyプロパティは, フォントのデザインを設定している.  
-`Verdana`はMicrosoftが開発したサンセリフ体のフォントである.  
-`sans-serif`は総称ファミリーと言い, 指定したフォントが使用できない閲覧者に, 最低限のフォントファミリーを提供するためのものである.  
-今回は`sans-serif`を設定したので, ゴシック系のフォントを表示する.
+font-familyプロパティは, フォントを設定するプロパティである.  
+複数指定した場合, 左側がはじめに適用され, もしもそのWebブラウザがそのフォントに対応していなかった場合は右側が適用される.  
+`Verdana`はサンセリフ体のフォントで, `sans-serif`はゴシック体のフォント(詳しくは総称ファミリーで調べてほしい)である.
 
 7行目:  
 box-sizingプロパティは, paddingとborderの幅と高さをwidthに含めるかどうかを設定する.  
@@ -88,7 +100,7 @@ box-sizingプロパティは, paddingとborderの幅と高さをwidthに含め�
 list-style-typeプロパティは, リストの項目の先頭に表示するマーカー文字の種類を示す.  
 `none`を指定することで, マーカー文字を表示しないように設定している.
 
-## コンテンツの作成
+# コンテンツの作成
 次に完成品を元に, コンテンツを作成する.  
 コンテンツを作成する前に, CSSを記述する.  
 今回はCSS設計のOOCSSを元にCSSを記述する.  
@@ -190,7 +202,7 @@ header {
 }
 ```
 
-13行目: 
+13行目:
 font-weightプロパティを指定すると, 文字の太さを定義できる.  
 ここでは`normal`を指定しているため, 文字の太さは等倍である.
 
@@ -253,7 +265,7 @@ article:nth-of-type(2n) {
 10行目:  
 `sub-title`という共有のclassセレクタを作成することで, レイアウトを統一し, コード量を削減している.
 
-### 開催情報・お知らせの作成
+# 開催情報・お知らせの作成
 これら２つの項目は, 同じ構成をしているため, まとめてに解説する.  
 以下の画像は開催情報・お知らせの要素ごとのまとまりを表している.
 
