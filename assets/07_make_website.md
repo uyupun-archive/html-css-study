@@ -143,7 +143,6 @@ CSS設計の詳細については, [第８章 発展的なトピック > CSS設�
   box-sizing: border-box;
   max-width: 768px;
   margin: 0 auto;
-  color: chocolate;
 }
 
 .grid {
