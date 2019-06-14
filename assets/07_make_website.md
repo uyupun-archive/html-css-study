@@ -202,11 +202,36 @@ header {
 }
 ```
 
+<<<<<<< HEAD
 13行目:
+=======
+13行目:  
+>>>>>>> 269b38fd6d101f13a5bfa9096773b8a548eef0b3
 font-weightプロパティを指定すると, 文字の太さを定義できる.  
 ここでは`normal`を指定しているため, 文字の太さは等倍である.
 
-// TODO: コード解説
+22行目:  
+border-radiusプロパティを指定することで要素の角を丸める.  
+widthとheightが同じ大きさなら`50%`にすると
+
+23行目:  
+text-decorationプロパティはテキスト傍線の付け方, 色, スタイルを定義する.
+ここでは`none`を指定しているため, テキスト傍線は表示されない.
+
+24行目:  
+opacityプロパティは要素の透明度を定義する.  
+値としては, 1.0が不透明で0.0になるにつれて薄くなり, 0.0で透明になる.
+
+27行目:  
+擬似クラスの`:hover`を使用することで, カーソルが要素の上にきたときにスタイルを適用する.
+
+32行目:  
+box-shadowプロパティは要素に影を付けるために使用される.
+ここでは`0 0 10px 5px`と指定し, ぼかしの距離10pxにし, 影を5pxで定義している.  
+`rgba(0, 0, 0, 0.3)`はrgbの値を指定し, 4つ目の値で透明度を定義している.
+
+35行目:  
+擬似クラスの`:last-of-type`を使用することで, 指定されたセレクタの最後の要素にスタイルが適用される.
 
 ## メインの作成
 次にメイン画面を作成する.  
@@ -265,8 +290,14 @@ article:nth-of-type(2n) {
 10行目:  
 `sub-title`という共有のclassセレクタを作成することで, レイアウトを統一し, コード量を削減している.
 
+<<<<<<< HEAD
 # 開催情報・お知らせの作成
 これら２つの項目は, 同じ構成をしているため, まとめてに解説する.  
+=======
+### 開催情報・お知らせの作成
+これら２つの項目は, 同じ構成をしているため, まとめて記載する.  
+また, ここでは解説は省略する.    
+>>>>>>> 269b38fd6d101f13a5bfa9096773b8a548eef0b3
 以下の画像は開催情報・お知らせの要素ごとのまとまりを表している.
 
 <img src="../img/07_make_website/003.png" width="600">
@@ -318,13 +349,86 @@ article:nth-of-type(2n) {
 }
 ```
 
-9行目:  
-擬似クラスの`:last-of-type`を使用することで, 指定されたセレクタの最後の要素にスタイルが適用される.
-
 ### 入会者の声の作成
+最後に入会者の声の項目を作成する.  
 
-### フッターの作成
+<img src="../img/07_make_website/004.png" width="600">
+
+```html
+<main>
+  <article>
+    <!-- 省略 -->
+  </article>
+  <article>
+    <section class="voices">
+      <div class="container">
+        <h2 class="sub-title">入会者のこえ</h2>
+        <div class="grid voices-grid">
+          <div class="col voices-col">
+            <img src="images/takashi1.jpg" alt="たかし１" class="image circle">
+          </div>
+          <div class="col voices-col">
+            <h3>ひで</h3>
+            <p>超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ超超超いい感じ超超超超いい感じ</p>
+          </div>
+        </div>
+        <div class="grid voices-grid">
+          <div class="col voices-col">
+            <img src="images/takashi2.jpg" alt="たかし２" class="image circle">
+          </div>
+          <div class="col voices-col">
+            <h3>いぬ</h3>
+            <p>木曜日は （モクモク） 僕にまかせて！ （モクモク） いいものいっぱい （モクモク） 木曜モッくん 木曜の市 朝と夕方 僕に 会いに来て！ モクモク モッくん 木曜モッくん メガホン持って あなたを応援！！ モクモク モッくん 木曜モッくん 木曜日は 僕に 会いに来て～</p>
+          </div>
+        </div>
+        <div class="grid voices-grid">
+          <div class="col voices-col">
+            <img src="images/takashi3.jpg" alt="たかし３" class="image circle">
+          </div>
+          <div class="col voices-col">
+            <h3>たかし</h3>
+            <p>あ～～アツい！！アツいアツいアツい！！！！！あつすぎる～～～～～～、うわあああああああ！！！！！あぢ～～～～～～～～！！！！！あついっピーーーーーーーーー！！！！！！！！！！！！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <article>
+    <!-- 省略 -->
+  </article>
+</main>
+```
+
+```css
+.voices-grid {
+  margin-bottom: 40px;
+}
+
+.voices-grid:last-of-type {
+  margin-bottom: 0;
+}
+
+.voices-grid:nth-of-type(2n) .voices-col:first-of-type {
+  text-align: right;
+}
+
+.voices-grid:nth-of-type(2n) .voices-col:last-of-type {
+  grid-row-start: 1;
+}
+
+.circle {
+  border-radius: 50%;
+}
+```
+
+13, 14行目:  
+grid-row-startプロパティはカラムの表示順序を入れ替えることができる.  
+`.voices-col:last-of-type`に`1`を定義することで, 最後の要素が最初に表示されるようになる.
+
+## フッターの作成
 フッターは簡単に作成できるため, 解説は省略する.
+
+<img src="../img/07_make_website/006.png" width="600">
 
 ```html
 <footer>
@@ -344,3 +448,55 @@ footer {
 ```
 
 ## レスポンシブ対応
+最後にレスポンシブ対応をする.  
+レスポンシブ対応については, 次章で詳しく紹介している.  
+
+```html
+<head>
+  <meta charset="utf-8">
++ <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <title>ほうかご勉強会</title>
+</head>
+```
+
+```css
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-col {
+    text-align: center;
+  }
+  .header-col:last-of-type {
+    text-align: center;
+    grid-row-start: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .voices-grid:nth-of-type(2n) .voices-col:first-of-type {
+    text-align: center;
+    grid-row-start: 1;
+  }
+  .voices-grid:nth-of-type(2n) .voices-col:last-of-type {
+    grid-row-start: 2;
+  }
+  .voices-col {
+    text-align: center;
+  }
+}
+```
+
+まず, head内にviewportを定義する.  
+`@media (max-width: 767px)`内にスタイルを記述することで, ブラウザの幅が767px以下のときにスタイルが適用される.
