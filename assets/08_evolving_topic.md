@@ -30,12 +30,12 @@ div {
 
 <img src="../img/08_evolving_topic/001.png" width="300">
 
-red-boxクラスは, `padding`と`border`を含まないので, `width`と`height`の値は200pxと100pxのままである.  
-一方blue-boxクラスは, `padding`と`border`を含むので, `width`が160px(200px - 10px \* 4), `height`が60px(100px - 10px \* 4)になる.
+red-boxクラスは`padding`と`border`を含まないため, `width`と`height`の値は200pxと100pxのままである.  
+一方blue-boxクラスは, `padding`と`border`を含むため, `width`が160px(200px - 10px \* 4), `height`が60px(100px - 10px \* 4)になる.
 
 # z-index
 z-indexプロパティは, 要素の重なりの順序を指定する.  
-positionプロパティの値がstatic以外の要素に適応する.  
+positionプロパティの値がstatic以外の要素に対して適用する.  
 z-indexプロパティを指定しない場合, 後に宣言された要素が上に重なる.
 
 ```html
@@ -111,13 +111,13 @@ visibilityプロパティは, 要素の表示, 非表示を指定する.
 <img src="../img/08_evolving_topic/003.png" width="300">
 
 `visibility: hidden;`と同じように非表示にする`display: none`がある.  
-2つの違いは, 要素を非表示にするだけか, 要素をなくすかである.  
+前者は要素は非表示になるが表示領域はそのまま残り, 後者は要素そのものが非表示になる, といった違いがある.
 以下の画像は, 上記のコードの`visibility: hidden;`の箇所を`display: none`に変更した場合の表示結果である.
 
 <img src="../img/08_evolving_topic/004.png" width="300">
 
 # CSS設計
-CSSは思っているよりも破綻しやすい.  
+CSSは想像以上に脆く, 破綻しやすい.  
 そのため, ある程度CSSが複雑になることが予想されるのであれば, 初めのうちからCSS設計を導入することをお勧めする.  
 CSS設計とは, class名の付け方やCSSファイルの分類に一定のルールを設けることで, 破綻しにくい堅牢なCSSを書くことができる仕組みの総称である.  
 CSS設計にも様々な種類があり, 導入の際にはそのプロジェクトに合ったCSS設計を採用すると良い.  
