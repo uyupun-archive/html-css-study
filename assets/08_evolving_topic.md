@@ -31,7 +31,7 @@ div {
 <img src="../img/08_evolving_topic/001.png" width="300">
 
 red-boxクラスは, `padding`と`border`を含まないので, `width`と`height`の値は200pxと100pxのままである.  
-一方blue-boxクラスは, `padding`と`border`を含むので, `width`が160px(200-10*4), `height`が60px(100-10*4)になる.
+一方blue-boxクラスは, `padding`と`border`を含むので, `width`が160px(200px - 10px \* 4), `height`が60px(100px - 10px \* 4)になる.
 
 # z-index
 z-indexプロパティは, 要素の重なりの順序を指定する.  
@@ -67,6 +67,54 @@ div {
 上記のコードを実行すると, 以下の画像のように先に宣言された要素が上に重なる.
 
 <img src="../img/08_evolving_topic/002.png" width="300">
+
+# visibility
+visibilityプロパティは, 要素の表示, 非表示を指定する.  
+
+```html
+<div class="flex">
+  <div class="box bg-red"></div>
+  <div class="box bg-blue hidden"></div>
+  <div class="box bg-green"></div>
+</div>
+```
+
+```css
+.flex {
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+```
+
+上記のコードを実行すると, 以下の画像のようになる.
+
+<img src="../img/08_evolving_topic/003.png" width="300">
+
+`visibility: hidden;`と同じように非表示にする`display: none`がある.  
+2つの違いは, 要素を非表示にするだけか, 要素をなくすかである.  
+以下の画像は, 上記のコードの`visibility: hidden;`の箇所を`display: none`に変更した場合の表示結果である.
+
+<img src="../img/08_evolving_topic/004.png" width="300">
 
 # CSS設計
 CSSは思っているよりも破綻しやすい.  
@@ -226,6 +274,3 @@ CSSの値の指定で扱える単位は様々あるが, その中でもよく使
 |`rem`|相対単位. 基準はルート要素のフォントサイズ|-|
 |`vw`|相対単位. ビューポート幅の1/100|-|
 |`vh`|相対単位. ビューポート高さの1/100|-|
-
-# visibility
-執筆中 ...
