@@ -26,12 +26,47 @@ div {
 }
 ```
 
-上記のコードを実行すると以下の画像のようになる.
+上記のコードを実行すると, 以下の画像のようになる.
 
 <img src="../img/08_evolving_topic/001.png" width="300">
 
 red-boxクラスは, `padding`と`border`を含まないので, `width`と`height`の値は200pxと100pxのままである.  
 一方blue-boxクラスは, `padding`と`border`を含むので, `width`が160px(200-10*4), `height`が60px(100-10*4)になる.
+
+# z-index
+z-indexプロパティは, 要素の重なりの順序を指定する.  
+positionプロパティの値がstatic以外の要素に適応する.  
+z-indexプロパティを指定しない場合, 後に宣言された要素が上に重なる.
+
+```html
+<div class="red-box"></div>
+<div class="blue-box"></div>
+```
+
+```css
+div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.red-box {
+  background-color: red;
+  top: 0;
+  z-index: 2;
+}
+
+.blue-box {
+  background-color: blue;
+  top: -100px;
+  left: 100px;
+  z-index: 1;
+}
+```
+
+上記のコードを実行すると, 以下の画像のように先に宣言された要素が上に重なる.
+
+<img src="../img/08_evolving_topic/002.png" width="300">
 
 # CSS設計
 CSSは思っているよりも破綻しやすい.  
@@ -191,9 +226,6 @@ CSSの値の指定で扱える単位は様々あるが, その中でもよく使
 |`rem`|相対単位. 基準はルート要素のフォントサイズ|-|
 |`vw`|相対単位. ビューポート幅の1/100|-|
 |`vh`|相対単位. ビューポート高さの1/100|-|
-
-# z-index
-執筆中 ...
 
 # visibility
 執筆中 ...
