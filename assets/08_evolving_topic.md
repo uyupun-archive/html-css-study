@@ -1,3 +1,38 @@
+# box-sizing
+box-sizingプロパティは, `width`と`height`で指定した幅と高さの領域に, `padding`と`border`の幅と高さを含めるかどうかを決めるプロパティである.
+
+```html
+<div class="red-box"></div>
+<div class="blue-box"></div>
+```
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+.red-box {
+  border: 10px red solid;
+  background-color: red;
+  box-sizing: content-box; /* `padding`と`border`を含まない(初期値) */
+}
+
+.blue-box {
+  border: 10px blue solid;
+  background-color: blue;
+  box-sizing: border-box; /* `padding`と`border`を含む */
+}
+```
+
+上記のコードを実行すると以下の画像のようになる.
+
+<img src="../img/08_evolving_topic/001.png" width="300">
+
+red-boxクラスは, `padding`と`border`を含まないので, `width`と`height`の値は200pxと100pxのままである.  
+一方blue-boxクラスは, `padding`と`border`を含むので, `width`が160px(200-10*4), `height`が60px(100-10*4)になる.
+
 # CSS設計
 CSSは思っているよりも破綻しやすい.  
 そのため, ある程度CSSが複雑になることが予想されるのであれば, 初めのうちからCSS設計を導入することをお勧めする.  
@@ -89,9 +124,6 @@ OOCSSは原則として以下の２つを挙げている.
   height: 150px;
 }
 ```
-
-# box-sizing
-執筆中 ...
 
 # レスポンシブ対応
 一昔前までは, WebページはPCに対応しておけば問題が無かった.  
