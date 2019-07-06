@@ -1,5 +1,123 @@
+# box-sizing
+box-sizingプロパティは, `width`と`height`で指定した幅と高さの領域に, `padding`と`border`の幅と高さを含めるかどうかを決めるプロパティである.
+
+```html
+<div class="red-box"></div>
+<div class="blue-box"></div>
+```
+
+```css
+div {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+
+.red-box {
+  border: 10px red solid;
+  background-color: red;
+  box-sizing: content-box; /* `padding`と`border`を含まない(初期値) */
+}
+
+.blue-box {
+  border: 10px blue solid;
+  background-color: blue;
+  box-sizing: border-box; /* `padding`と`border`を含む */
+}
+```
+
+上記のコードを実行すると, 以下の画像のようになる.
+
+<img src="../img/08_evolving_topic/001.png" width="300">
+
+red-boxクラスは`padding`と`border`を含まないため, `width`と`height`の値は200pxと100pxのままである.  
+一方blue-boxクラスは, `padding`と`border`を含むため, `width`が160px(200px - 10px \* 4), `height`が60px(100px - 10px \* 4)になる.
+
+# z-index
+z-indexプロパティは, 要素の重なりの順序を指定する.  
+positionプロパティの値がstatic以外の要素に対して適用する.  
+z-indexプロパティを指定しない場合, 後に宣言された要素が上に重なる.
+
+```html
+<div class="red-box"></div>
+<div class="blue-box"></div>
+```
+
+```css
+div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.red-box {
+  background-color: red;
+  top: 0;
+  z-index: 2;
+}
+
+.blue-box {
+  background-color: blue;
+  top: -100px;
+  left: 100px;
+  z-index: 1;
+}
+```
+
+上記のコードを実行すると, 以下の画像のように先に宣言された要素が上に重なる.
+
+<img src="../img/08_evolving_topic/002.png" width="300">
+
+# visibility
+visibilityプロパティは, 要素の表示, 非表示を指定する.  
+
+```html
+<div class="flex">
+  <div class="box bg-red"></div>
+  <div class="box bg-blue hidden"></div>
+  <div class="box bg-green"></div>
+</div>
+```
+
+```css
+.flex {
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+```
+
+上記のコードを実行すると, 以下の画像のようになる.
+
+<img src="../img/08_evolving_topic/003.png" width="300">
+
+`visibility: hidden;`と同じように非表示にする`display: none`がある.  
+前者は要素は非表示になるが表示領域はそのまま残り, 後者は要素そのものが非表示になる, といった違いがある.
+以下の画像は, 上記のコードの`visibility: hidden;`の箇所を`display: none`に変更した場合の表示結果である.
+
+<img src="../img/08_evolving_topic/004.png" width="300">
+
 # CSS設計
-CSSは思っているよりも破綻しやすい.  
+CSSは想像以上に脆く, 破綻しやすい.  
 そのため, ある程度CSSが複雑になることが予想されるのであれば, 初めのうちからCSS設計を導入することをお勧めする.  
 CSS設計とは, class名の付け方やCSSファイルの分類に一定のルールを設けることで, 破綻しにくい堅牢なCSSを書くことができる仕組みの総称である.  
 CSS設計にも様々な種類があり, 導入の際にはそのプロジェクトに合ったCSS設計を採用すると良い.  
@@ -90,9 +208,6 @@ OOCSSは原則として以下の２つを挙げている.
 }
 ```
 
-# box-sizing
-執筆中 ...
-
 # レスポンシブ対応
 一昔前までは, WebページはPCに対応しておけば問題が無かった.  
 しかし現在では, PCの他にもタブレットやスマートフォンなど, 様々なサイズ, 操作性を持ったデバイスが登場している.  
@@ -159,9 +274,3 @@ CSSの値の指定で扱える単位は様々あるが, その中でもよく使
 |`rem`|相対単位. 基準はルート要素のフォントサイズ|-|
 |`vw`|相対単位. ビューポート幅の1/100|-|
 |`vh`|相対単位. ビューポート高さの1/100|-|
-
-# z-index
-執筆中 ...
-
-# visibility
-執筆中 ...
