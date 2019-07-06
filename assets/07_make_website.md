@@ -14,15 +14,15 @@ https://github.com/after-school-study-group/html-css-study-parts にアクセス
 
 ```
 my-site
-  index.html
-  favicon.ico
-  css
-    style.css
-  images
-    ass.png
-    takashi1.jpg
-    takashi2.jpg
-    takashi3.jpg
+├ index.html
+├ favicon.ico
+├ css
+│ └ style.css
+└ images
+　 ├ ass.png
+　 ├ takashi1.jpg
+　 ├ takashi2.jpg
+　 └ takashi3.jpg
 ```
 
 HTMLは`index.html`, CSSは`style.css`に記述していく.  
